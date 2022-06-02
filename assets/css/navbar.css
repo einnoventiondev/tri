@@ -1,0 +1,103 @@
+.nav{
+	margin-bottom: 115px;
+	position: relative;
+	z-index: 7;
+}
+.nav__list{
+	width: 33.33%;
+}
+.nav__list-item{
+	width: 110px;
+	padding: 15px 0;
+	position: relative;
+}
+.nav__bottom-design-line{
+	width: 0px;
+	height: 3px;
+	background-color: var(--off-white);
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	transition: 0.3s ease-in-out;
+}
+.nav__list-item-img{
+	margin-left: 10px;
+	height: 20px;
+}
+/* icone change  */
+.nav__list-item-img-colored{
+	position: absolute;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.nav__list-item:hover .nav__bottom-design-line,
+.nav__list-item.active .nav__bottom-design-line{
+	width: 35px;
+	transition: 0.3s ease-in-out;
+	background-color: var(--chocolate);
+}
+.nav__list-item:hover .nav__list-item-img-colored,
+.nav__list-item.active .nav__list-item-img-colored{
+	position: relative;
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+.nav__list-item:hover .nav__list-item-img-white,
+.nav__list-item.active .nav__list-item-img-white{
+	position: absolute;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.nav__list-item .nav__list-item-img-white{
+	position: relative;
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+/* icone change end */
+.nav__list-link{
+	color: var(--off-white);
+}
+.nav__list-item:hover .nav__list-link,
+.nav__list-item.active .nav__list-link{
+	color: var(--chocolate);
+}
+.nav__logo-holder{
+	margin: 0;
+}
+.nav__logo{
+	width: 33.33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav__language{
+	width: 33.33%;
+	display: flex;
+	justify-content: flex-end;
+}
+.nav__language-link{
+	color: var(--off-white);
+	transition: all 0.3s ease-in-out;
+	line-height: 1;
+	position: relative;
+	padding: 15px 0;
+}
+.nav__language-link:hover,
+.nav__language-link.active{
+	color: var(--chocolate);
+	transition: all 0.3s ease-in-out;
+}
+.nav__language-link--2{
+	margin-right: 30px;
+}
+.nav__language-link .nav__bottom-design-line{
+	right: 0;
+}
+.nav__language-link:hover .nav__bottom-design-line,
+.nav__language-link.active .nav__bottom-design-line{
+	background-color: var(--chocolate);
+	width: 35px;
+	transition: 0.3s ease-in-out;
+}
+/* navbar end */

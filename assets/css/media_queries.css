@@ -1,0 +1,32 @@
+@media(max-width:1599px){ 
+    /* 1400px to  1599px */
+    /* lg-screens */
+
+}
+@media(max-width:1399px){ 
+    /* 1200px to  1399px */
+    /* full laptops */
+    
+}
+@media(max-width:1199px){ 
+    /* 992px to  1199px */
+    /* small laptops */
+    
+}
+@media(max-width:991px){ 
+    /* 768px to  991px */
+    /* tablets */
+    
+}
+@media(max-width:767px){
+    /* 540px to  767px */
+    /* tablets and bigger mobiles */
+}
+@media(max-width:539px){
+    /* 360px to  539px */
+    /* normal mobiles */
+}
+@media(max-width:359px){
+    /* 320px to  359px */
+    /* small mobile */
+}
