@@ -61,6 +61,7 @@ $(document).ready(function() {
     $('body').click(function() {
 		$('.map-tab-dot').removeClass("active");
 		$('.mobil-view-absolute').removeClass("active");
+        $('.map-tab__list').removeClass('mobile-margin');
 	});
 	$('.mobil-view-absolute').click(function(event) {
 		event.stopPropagation(); // prevents executing the above event
@@ -75,6 +76,14 @@ $(document).ready(function() {
         }
         else if($(this).prop("checked") == false){
             $('.map-tab-dots').removeClass('show');
+        }
+    });
+    $('.map-tab-dot').click(function(){
+        if($(this).hasClass("active")){
+            $('.map-tab__list').addClass('mobile-margin');
+        }
+        else{
+            $('.map-tab__list').removeClass('mobile-margin');
         }
     });
     // select color

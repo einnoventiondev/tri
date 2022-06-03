@@ -147,14 +147,314 @@
         top: 66px;
         left: -291px;
     }
+    .header__blur-box {
+        width: 46%;
+        height: auto;
+    }
+    .header__img-green{
+        width: 80%;
+    }
+    .header__img-chocolate{
+        width: 90%;
+    }
+    .header__content-img{
+        max-height: 300px;
+    }
+    .header__content-heading{
+        margin-bottom: 30px;
+    }
 }
 @media(max-width:767px){
-    /* 540px to  767px */
-    /* tablets and bigger mobiles */
+    .container-modified{
+        width: 100%;
+    }
+    .form-box-outer{
+        padding: 0 15px;
+    }
+    .nav__list{
+        width: 45%;
+    }
+    .nav__language{
+        width: 45%;
+    }
+    .nav__logo{
+        width: 10%;
+    }
+    .slider__text-box-heading {
+        font-size: 20px;
+    }
+    .slider__text-box-img {
+        width: 150px;
+        left: calc(50% - 65px);
+        top: 358px;
+    }
+    .slider .owl-dots {
+        transform: translateY(-60px) !important;
+    }
+    .map-view__select-box{
+        margin-bottom: 30px;
+    }
+    .dot-relative{
+        width: 15px;
+        height: 15px;
+    }
+    .map-tab-dot__inner{
+        width: 5px;
+        height: 5px;
+    }
+    .map-tab-dot__bg{
+        animation: pulsing 1s linear infinite;
+    }
+    @keyframes pulsing {
+        0%{
+            width: 5px;
+            height: 5px;
+        }
+        100%{
+            width: 15px;
+            height: 15px;
+            top: -2.5px;
+            left: -2.5px;
+        }
+    }
+    .map-tab-dot4 {
+        top: -70px;
+    }
+    .map-tab-dot4 {
+        right: 107px;
+    }
+    .map-tab-dot3 {
+        right: 46px;
+        top: 8px;
+    }
+    .map-tab-dot1 {
+        top: -20px;
+        left: 83px;
+    }
+    .map-tab-dot2 {
+        left: 101px;
+        bottom: 216px;
+    }
+    .map-tab__list {
+        width: 100%;
+        margin: 0px auto 0 auto;
+    }
+    .mobile-margin{
+        margin-top: 540px;
+        transition: all 0.5s ease-in-out;
+    }
+    .map-view{
+        padding-bottom: 20px;
+    }
+    .header__content-heading, .conatct__heading {
+        padding-right: 0;
+        font-size: 80px;
+    }
+    .conatct__heading{
+        margin-bottom: 40px;
+    }
+    .conatct__bg-img {
+        top: 66px;
+        left: -79px;
+        width: 300px;
+    }
+    .conatct-content__box {
+        align-items: center;
+        text-align: center;
+    }
+    .tellers-logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .footer-text{
+        margin-bottom: 20px;
+    }
+    .footer-media-list{
+        margin: 0;
+        justify-content: center;
+    }
+    .footer-media-list__item{
+        margin: 0 20px !important;
+    }
+    .footer{
+        padding-bottom: 30px;
+    }
+    .header__content-img {
+        max-height: 220px;
+    }
+    .header__content-para{
+        width: 100%;
+    }
+    .mobile-view-arrow{
+        display: none;
+    }
+    .mobil-view-absolute{
+        bottom: 50px !important;
+        right: calc(50% - 132.5px) !important;
+    }
+    .pdd{
+        padding: 0 15px !important;
+    }
 }
 @media(max-width:539px){
     /* 360px to  539px */
     /* normal mobiles */
+    .header{
+        padding-top: 20px;
+    }
+    .nav__language-link{
+        font-size: 12px;
+    }
+    .nav__language-link--2 {
+        margin-right: 15px;
+    }
+    .nav__logo-img{
+        width: 40px;
+        left: calc(50% - 20px);
+    }
+    .nav__list-link{
+        font-size: 12px;
+    }
+    .nav__list-item-img {
+        margin-left: 5px;
+        height: 12px;
+    }
+    .nav__language-link{
+        padding: 22px 0;
+    }
+    .nav__list-item {
+        width: 110px;
+        padding: 22px 0;
+    }
+    .nav__bottom-design-line {
+        bottom: 10px;
+        right: 14px;
+    }
+    .header__img-chocolate{
+        top: 130px;
+    }
+    .header__blur-box{
+        top: 90px;
+    }
+    .nav {
+        margin-bottom: 100px;
+    }
+    .header__content-img {
+        max-height: 153px;
+    }
+    .header__content-para {
+        font-size: 12px;
+    }
+    .slider__box-floor{
+        top: 110px;
+        height: 200px;
+    }
+    .slider__text-box--2{
+        display: none;
+    }
+    .slider__text-box{
+        width: 50%;
+    }
+    .slider__text-box-img {
+        width: 130px;
+        left: calc(50% - 54px);
+        top: 240px;
+    }
+    .slider__box-chair-desc {
+        margin-bottom: 140px;
+    }
+    .slider .owl-dots {
+        transform: translateY(-100px) !important;
+    }
+    .slider__box-chair-desc{
+        font-size: 14px;
+    }
+    .map-view__heading {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+    .map-view__heading-kilometer {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .map-toggle-wrapper__desc{
+        font-size: 12px;
+    }
+    .map-toggle-wrapper__desc{
+        margin-left: 20px;
+    }
+    .conatct__heading{
+        position: relative;
+    }
+    .conatct-content__heading {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .conatct-content__address {
+        font-size: 14px;
+    }
+    .conatct-content__box {
+        margin-bottom: 20px;
+    }
+    .form-box{
+        padding: 50px 20px;
+
+        transform: translateY(0);
+    }
+    .form-box__input{
+        font-size: 14px;
+    }
+    .form-box__input::placeholder{
+        font-size: 14px;
+    }
+    .form-box__input:focus::placeholder{
+        font-size: 14px;
+    }
+    .form-box__input{
+        height: 50px;
+    }
+    .form-box__input--textarea{
+        height: 200px;
+    }
+    .map-view__select-box{
+        height: 50px;
+    }
+    .footer-text{
+        font-size: 12px;
+    }
+    .tellers-logo__img{
+        width: 65%;
+    }
+    .map-tab {
+        width: 335px;
+    }
+    .map-tab__list-link{
+        font-size: 14px;
+    }
+    .map-tab__list-icone {
+        font-size: 14px;
+    }
+    .map-toggle-wrapper{
+        position: relative;
+        z-index: 9;
+    }
+    .map-tab-dot4 {
+        right: 120px;
+        top: -128px;
+    }
+    .map-tab-dot3 {
+        right: 78px;
+        top: -36px;
+    }
+    .map-tab-dot1 {
+        top: -5px;
+        left: 112px;
+    }
+    .map-tab-dot2 {
+        left: 101px;
+        top: -91px;
+    }
 }
 @media(max-width:359px){
     /* 320px to  359px */

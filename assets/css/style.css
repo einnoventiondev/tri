@@ -622,6 +622,7 @@ option::selection{
 .map-tab__list{
 	width: 50%;
 	margin: 0 auto;
+	transition: all 0.5s ease-in-out;
 }
 .map-tab__list-item{
 	margin: 0 10px;
