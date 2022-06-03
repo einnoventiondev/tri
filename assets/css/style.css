@@ -292,7 +292,7 @@ a:hover{
 .map-view__select-box{
 	padding: 10px 20px;
 	height: 60px;
-	background: var(--mid-black);
+	background-color: var(--mid-black);
 	outline: none;
 	border: none;
 	border-radius: 40px;
@@ -308,7 +308,7 @@ a:hover{
 }
 .form-control:focus{
 	color: var(--chocolate);
-	background: var(--mid-black);
+	background-color: var(--mid-black);
 	box-shadow: none;
 }
 option::selection{
@@ -791,3 +791,9 @@ option::selection{
 	cursor: pointer;
   }
   /*# sourceMappingURL=style.css.map */
+
+  select {
+    background-image: url(../images/down-arrow-off-white.svg);
+    background-repeat: no-repeat;
+    background-position: 20px;
+}
