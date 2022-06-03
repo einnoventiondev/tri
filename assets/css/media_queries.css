@@ -11,7 +11,21 @@
 @media(max-width:1199px){ 
     /* 992px to  1199px */
     /* small laptops */
-    
+    .header__blur-box{
+        width: 500px;
+        height: auto;
+    }
+    .header__img-chocolate{
+        width: 900px;
+        height: 200px;
+    }
+    .header__img-green {
+        top: 0px;
+        right: -3%;
+    }
+    .slider__box-floor{
+        left: auto;
+    }
 }
 @media(max-width:991px){ 
     /* 768px to  991px */
