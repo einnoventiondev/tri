@@ -71,6 +71,12 @@ a:hover{
 .mgl-0{
 	margin-left: 0 !important;
 }
+.pdl-0{
+	padding-left: 0;
+}
+.pdr-0{
+	padding-right: 0;
+}
 .mgl-auto{
     margin-left: auto;
 }
@@ -104,18 +110,21 @@ a:hover{
 }
 .header__blur-box{
 	position: absolute;
-	clip-path: polygon(100% 0, 0 32%, 98% 100%);
+	/* clip-path: polygon(100% 0, 0 32%, 98% 100%); */
 	width: 619px;
 	height: 684px;
-	background-color: #303138;
 	top: 0;
-	opacity: 0.4;
 	left: 0;
 	z-index: 6;
+	backdrop-filter: blur(10px);
 }
 .header__img-chocolate{
 	position: absolute;
-	top: 240px;
+	width: 1170px;
+	height: 226px;
+	background: url(../images/banner-chocolate-overlay.png) no-repeat;
+	background-size: 100% 100%;
+	top: 180px;
 	opacity: 0.7;
 	left: 0;
 	z-index: 1;
@@ -132,6 +141,16 @@ a:hover{
 	top: 0;
 	right: 0;
 	z-index: 2;
+	animation: skew1 2s linear infinite alternate;
+	animation-delay: 5s;
+}
+@keyframes skew1 {
+	0%{
+		transform: rotate3d(0, 0, 0, 0deg);
+	}
+	100%{
+		transform: rotate3d(0, -1, 0, 25deg);
+	}
 }
 .header__img-green{
 	position: absolute;
@@ -157,8 +176,11 @@ a:hover{
 }
 /* header end */
 /* slider */
+.slider-wrapper{
+	direction: ltr;
+}
 .slider .owl-dots{
-	transform: translateY(-60px) !important;
+	transform: translateY(-30px) !important;
 }
 .slider .owl-theme .owl-dots .owl-dot span{
 	width: 20px;
@@ -186,6 +208,26 @@ a:hover{
 	position: absolute;
 	left: calc(50% - 155px);
 	top: 553px;
+	animation: pressing 4s linear infinite alternate;
+	z-index: 9;
+}
+@keyframes pressing {
+	0%{
+		transform: translateX(8px);
+	}
+	25%{
+		transform: translateX(-8px);
+	}
+	50%{
+		transform: translateY(8px);
+	}
+	75%{
+		transform: translateY(-8px);
+	}
+	100%{
+		transform: translateX(8px);
+	}
+
 }
 .slider__box{
 	text-align: center;
@@ -255,9 +297,13 @@ a:hover{
 	border: none;
 	border-radius: 40px;
 	color: var(--off-white);
+	position: relative;
 }
 .map-view__select-box::after{
-	content: '<i class="fa-solid fa-arrow-left"></i>';
+	content: url(../images/down-arrow-off-white.svg);
+	position: absolute;
+	top: 0;
+	left: 0;
 
 }
 .form-control:focus{
@@ -350,8 +396,8 @@ option::selection{
 	left: calc(50% - 135px);
 }
 .map-tab-dot{
-
 	cursor: pointer;
+	
 }
 .dot-relative{
 	width: 35px;
@@ -367,6 +413,9 @@ option::selection{
 	background: #97B370;
 	opacity: 0.4;
 	transition: all 0.3s ease-in-out;
+	animation: pulsing 1s linear infinite;
+	top:calc(50% - 5px);
+	left:calc(50% - 5px);
 }
 .map-tab-dot__inner{
 	width: 12px;
@@ -667,7 +716,17 @@ option::selection{
 .conatct__bg-img{
 	position: absolute;
 	top: 400px;
-	left: -200px;
+	left: -315px;
+	animation: skew 2s linear infinite alternate;
+	animation-delay: 3s;
+}
+@keyframes skew {
+	0%{
+		transform: rotate3d(0, 0, 0, 0deg);
+	}
+	100%{
+		transform: rotate3d(0, 1, 0, 45deg);
+	}
 }
 /* conatct end */
 /* footer */
@@ -694,3 +753,41 @@ option::selection{
 	text-align: center;
 	font-size: 14px;
 }
+@keyframes pulsing {
+	0%{
+		width: 10px;
+		height: 10px;
+	}
+	100%{
+		width: 35px;
+		height: 35px;
+		top: 0;
+		left: 0;
+	}
+}
+/* scrolle bar */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 5px;
+	scroll-behavior: smooth;
+	scroll-padding-top: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background-color: var(--mid-black);
+	border-radius: 10px;
+	scroll-padding-top: 20px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	border-radius: 25px;
+	background: var(--chocolate);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	cursor: pointer;
+  }
+  /*# sourceMappingURL=style.css.map */

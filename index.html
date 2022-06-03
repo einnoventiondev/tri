@@ -5,11 +5,12 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>تراي</title>
 	<!-- Favicons -->
-	<link href="assets/images/favicone.png" rel="icon">
+	<link href="assets/images/sm-logo3.png" rel="icon">
 	<!-- font aweasome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 	<!-- bootstrap 5 -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!-- fonts -->
 	<link href="assets/fonts/fonts.css" rel="stylesheet">
 	<!-- owl -->
@@ -17,6 +18,7 @@
 	<link href="assets/css/owl.carousel.min.css" rel="stylesheet">
 	<!-- AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<!-- Main Stylesheet File -->
 	<link href="assets/css/navbar.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
@@ -29,7 +31,7 @@
 			<nav class="nav">
 				<div class="container-modified">
 					<div class="nav-wrapper wrapper al-center jst-btw">
-						<ul class="nav__list wrapper al-center">
+						<ul class="nav__list wrapper al-center" data-aos="fade-left"data-aos-easing="linear">
 							<li class="nav__list-item wrapper al-center active">
 								<img src="assets/images/home-off-white.svg" alt="home" class="nav__list-item-img nav__list-item-img-white">
 								<img src="assets/images/home-colored.svg" alt="home" class="nav__list-item-img nav__list-item-img-colored">
@@ -39,21 +41,22 @@
 							<li class="nav__list-item wrapper al-center">
 								<img src="assets/images/call-offwhite.svg" alt="home" class="nav__list-item-img nav__list-item-img-white">
 								<img src="assets/images/call-colored.svg" alt="home" class="nav__list-item-img nav__list-item-img-colored">
-								<a href="#" class="nav__list-link">إتصل بنا</a>
+								<a href="#contact-form" class="nav__list-link">إتصل بنا</a>
 								<div class="nav__bottom-design-line"></div>
 							</li>
 						</ul>
 						<a href="#" class="nav__logo">
 							<figure class="nav__logo-holder">
-								<img src="assets/images/logo.svg" alt="logo" class="nav__logo-img">
+								<img src="assets/images/logo.svg" alt="logo" class="nav__logo-img  nav__logo-img-white">
+								<img src="assets/images/logo-colored.svg" alt="logo" class="nav__logo-img nav__logo-img-colored">
 							</figure>
 						</a>
-						<div class="nav__language">
+						<div class="nav__language"data-aos="fade-right"data-aos-easing="linear">
 							<a href="#" class="nav__language-link nav__language-link--1 active">
 								عــــــــربي
 								<div class="nav__bottom-design-line"></div>
 							</a>
-							<a href="#" class="nav__language-link nav__language-link--2">
+							<a href="#" class="nav__language-link nav__language-link--2 mgl-0">
 								ENGLISH
 								<div class="nav__bottom-design-line"></div>
 							</a>
@@ -65,10 +68,10 @@
 			<div class="container">
 				<div class="header-wrapper">
 					<div class="header__content">
-						<h1 class="header__content-heading">
+						<h1 class="header__content-heading" data-aos="fade-down"data-aos-easing="linear">
 							من نحن
 						</h1>
-						<article class="header__content-para">
+						<article class="header__content-para" data-aos="fade-up"data-aos-easing="linear"data-aos-delay="10000">
 							هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
 						</article>
 						<img src="assets/images/ok-right.png" class="header__content-img">
@@ -76,22 +79,25 @@
 					</div>
 				</div>
 			</div>
-			<div class="header__blur-box">
+			<img src="assets/images/bg-blur1.png" alt="" class="header__blur-box">
+			<!-- <div class="header__blur-box">
 				<div class="bg-blur"></div>
-			</div>
-			<img src="assets/images/banner-chocolate-overlay.png" class="header__img-chocolate">
+			</div> -->
+			<div class="header__img-chocolate"></div>
 		</header>
 		<!-- header end -->
 		<section class="slider">
 			<img src="assets/images/chair-floor.png" class="slider__box-floor">
-			<img src="assets/images/arrow-btn-image.png" class="slider__text-box-img">
+			<a href="#map-view" class="slider-link">
+				<img src="assets/images/arrow-btn-image.png" class="slider__text-box-img">
+			</a>
 			<div class="container">
 				<!--   -->
 				<div class="slider-wrapper owl-carousel owl-theme">
 					<div class="slider__box">
-						<figure class="slider__box-img-holder">
+						<div class="slider__box-img-holder">
 							<img src="assets/images/chair.png" alt="saloon-chair" class="slider__box-img">
-						</figure>
+						</div>
 						<p class="slider__box-chair-desc">الأقسام الرئيسية</p>
 						<div class="slider__text-box-wrapper wrapper jst-btw">
 							<div class="slider__text-box slider__text-box--1">
@@ -112,9 +118,9 @@
 						</div>
 					</div>
 					<div class="slider__box">
-						<figure class="slider__box-img-holder">
-							<img src="assets/images/shower1.png" alt="saloon-chair" class="slider__box-img slider__box-img--2">
-						</figure>
+						<div class="slider__box-img-holder">
+							<img src="assets/images/shower1.png" alt="saloon-chair" class="slider__box-img">
+						</div>
 						<p class="slider__box-chair-desc">الأقسام الرئيسية</p>
 						<div class="slider__text-box-wrapper wrapper jst-btw">
 							<div class="slider__text-box slider__text-box--1">
@@ -135,9 +141,9 @@
 						</div>
 					</div>
 					<div class="slider__box">
-						<figure class="slider__box-img-holder">
+						<div class="slider__box-img-holder">
 							<img src="assets/images/chair.png" alt="saloon-chair" class="slider__box-img">
-						</figure>
+						</div>
 						<p class="slider__box-chair-desc">الأقسام الرئيسية</p>
 						<div class="slider__text-box-wrapper wrapper jst-btw">
 							<div class="slider__text-box slider__text-box--1">
@@ -161,12 +167,12 @@
 			</div>
 		</section>
 		<!-- slider end -->
-		<section class="map-view">
+		<section class="map-view" id="map-view">
 			<div class="container">
-				<div class="row map-view-slect-box-row">
+				<div class="row map-view-slect-box-row" data-aos="fade-up"data-aos-easing="linear">
 					<div class="col-sm-12 col-md-6">
 						<select name="" id="" class="select2 form-control map-view__select-box" id="map-view__select-box1">
-							<option value="" selected>اختيار المدينة</option>
+							<option value="" >اختيار المدينة</option>
 							<option value="">الرياض</option>
 							<option value="">الرياض</option>
 							<option value="">الرياض</option>
@@ -185,20 +191,20 @@
 						</select>
 					</div>
 				</div>
-				<h1 class="map-view__heading">
+				<h1 class="map-view__heading"data-aos="fade-up"data-aos-easing="linear"data-aos-delay="300">
 					الفرع القريب منك
 				</h1>
-				<h2 class="map-view__heading-kilometer">
+				<h2 class="map-view__heading-kilometer"data-aos="fade-up"data-aos-easing="linear"data-aos-delay="400">
 					0KM
 				</h2>
-				<div class="map-toggle-wrapper wrapper al-center jst-center">
+				<div class="map-toggle-wrapper wrapper al-center jst-center"data-aos="fade-up"data-aos-easing="linear"data-aos-delay="300">
 					<p class="map-toggle-wrapper__desc">
 						تفعيل موقعك الحالي للوصول الى أقرب فرع
 					</p>
 					<input type="checkbox" id="toggle" class="map-toggle__input">
 					<label for="toggle" class="map-toggle__label"></label>
 				</div>
-				<div class="map-tab">
+				<div class="map-tab"data-aos="fade-up"data-aos-easing="linear"data-aos-delay="400">
 					<div class="map-tab__img-holder">
 						<img src="assets/images/map.png" alt="" class="map-tab__img">
 						<p class="map-tab__text">
@@ -397,16 +403,16 @@
 			</div>
 		</section>
 		<!-- map view end -->
-		<section class="conatct">
-			<img src="assets/images/chat-left.png" class="conatct__bg-img">
+		<section class="conatct" id="contact-form">
+			<img src="assets/images/chat-left.png" class="conatct__bg-img"data-aos="zoom-in"data-aos-delay="300">
 			<div class="container">
-				<h1 class="conatct__heading">
+				<h1 class="conatct__heading"data-aos="fade-up"data-aos-easing="linear"data-aos-delay="300">
 					إتصل بنا
 				</h1>
 				<div class="row conatct-form-wrapper ">
 					<div class="col-md-3">
 						<div class="conatct-content">
-							<div class="conatct-content__box">
+							<div class="conatct-content__box"data-aos="fade-up"data-aos-easing="linear"data-aos-delay="300">
 								<h1 class="conatct-content__heading">موقع المكتب</h1>
 								<a href="#" class="conatct-content__address">
 									الرياض
@@ -416,7 +422,7 @@
 									شارع أحمد بن حنبل
 								</a>
 							</div>
-							<div class="conatct-content__box">
+							<div class="conatct-content__box"data-aos="fade-up"data-aos-easing="linear"data-aos-delay="500">
 								<h1 class="conatct-content__heading">
 									أرقام التواصل
 								</h1>
@@ -429,7 +435,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-9 form-box-outer">
+					<div class="col-md-9 form-box-outer"data-aos="fade-up"data-aos-easing="linear"data-aos-delay="500">
 						<div class="form-box">
 							<div class="form-box__bg"></div>
 							<form action="" class="form-box__form">
@@ -447,9 +453,9 @@
 		</section>
 		<!-- conatct end -->
 		<footer class="footer">
-			<div class="container">
+			<div class="container-modified">
 				<div class="row footer-wrapper">
-					<div class="col-sm-12 col-md-4">
+					<div class="col-sm-12 col-md-4 pdr-0">
 						<a href="https://tellers.sa/" class="tellers-logo">
 							<img src="assets/images/tellers logo.svg" class="tellers-logo__img">
 						</a>
@@ -463,14 +469,14 @@
 							لعام 2022
 						</p>
 					</div>
-					<div class="col-sm-12 col-md-4">
+					<div class="col-sm-12 col-md-4 pdl-0">
 						<ul class="footer-media-list wrapper al-center">
 							<li class="footer-media-list__item">
 								<a href="#" class="footer-media-list__link">
 									<i class="fa-brands fa-twitter footer-media-list__link-icone"></i> 
 								</a>
 							</li>
-							<li class="footer-media-list__item">
+							<li class="footer-media-list__item mgl-0">
 								<a href="#" class="footer-media-list__link">
 									<i class="fa-brands fa-instagram-square footer-media-list__link-icone"></i>
 								</a>
@@ -482,12 +488,25 @@
 		</footer>
     </div>
     <!-- body-wrapper end -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script> -->
 	<script src="assets/js/jquery.js"></script>
+	<!-- gsap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<!-- aos -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<!-- owl -->
 	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- custom -->
 	<script src="assets/js/scripts.js"></script>
+	<script>
+		gsap.from('.header__img-chocolate', {duration:1.5,	delay:0.5, 	backgroundPosition:'-1350px 0'});
+        gsap.from('.header__content-img', 	{duration:1.5, 	delay:1,  y: 700});
+        gsap.from('.header__img-green', 	{duration:1.5, 	delay:1.5,   	x: 1000});
+        gsap.from('.header__blur-box', 		{duration:2, 	delay:2.5,  x:'1350px'});
+	
+	  </script>
 </body>
 </html>

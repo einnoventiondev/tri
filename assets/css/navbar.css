@@ -1,5 +1,5 @@
 .nav{
-	margin-bottom: 115px;
+	margin-bottom: 175px;
 	position: relative;
 	z-index: 7;
 }
@@ -61,6 +61,24 @@
 .nav__list-item:hover .nav__list-link,
 .nav__list-item.active .nav__list-link{
 	color: var(--chocolate);
+}
+.nav__logo-img{
+	position: absolute;
+	top: 0;
+	left: calc(50% - 25px);
+	transition: all 0.3s ease-in-out;
+}
+.nav__logo-img-colored{
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.nav__logo-holder:hover .nav__logo-img-colored{
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+.nav__logo-holder:hover .nav__logo-img-white{
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
 }
 .nav__logo-holder{
 	margin: 0;

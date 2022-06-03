@@ -10,17 +10,16 @@ $(document).ready(function() {
 	});
     // animation on scroll
     var owl = $('.slider-wrapper');
-    owl.owlCarousel({
+        owl.owlCarousel({
+        animateOut: 'animate__fadeOutLeft',
+        animateIn: 'animate__fadeInRight',
         loop: true,
+        dots: true,
         nav: false,
         items: 1,
-        touchDrag: true,
-        mouseDrag: false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
-        smartSpeed: 1000,
-        autoplayHoverPause: true,
-        dots: true
+        smartSpeed: 1000
     });
     $('.map-tab-dot1').click(function(){
         $(this).toggleClass('active');
