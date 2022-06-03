@@ -792,8 +792,27 @@ option::selection{
   }
   /*# sourceMappingURL=style.css.map */
 
-  select {
+
+  /* asim */
+  .choclate-color{
+	color: var(--chocolate);
+	background-color: var(--mid-black);
+	box-shadow: none;
+  }
+  .arrow-off-white-icon {
     background-image: url(../images/down-arrow-off-white.svg);
     background-repeat: no-repeat;
     background-position: 20px;
-}
+	}
+	.arrow-icon{
+		background-image: url(../images/down-arrow-chocalate.svg);
+		background-repeat: no-repeat;
+		background-position: 20px;
+	}
+	textarea{
+		resize: none;
+	}
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	}

@@ -21,6 +21,7 @@ $(document).ready(function() {
         autoplayTimeout: 5000,
         smartSpeed: 1000
     });
+
     $('.map-tab-dot1').click(function(){
         $(this).toggleClass('active');
         $(this).prevAll().removeClass('active');
@@ -57,6 +58,28 @@ $(document).ready(function() {
         $('.mobil-view-absolute3').removeClass('active');
         $('.mobil-view-absolute4').toggleClass('active');
     });
+
+
+
+       // select color
+       $('.map-view__select-box').change(function(){
+        $(this).removeClass('arrow-off-white-icon');
+        $(this).addClass('choclate-color arrow-icon'); 
+    });
+    $('.map-view__select-box').focus(function(){
+        $(this).removeClass('arrow-off-white-icon');
+        $(this).addClass('choclate-color arrow-icon');
+    });
+
+    // form validation
+    // $('.form-control').keyup(function(){
+    //    var val = $(this).value();
+    //     if(val.length() > 0){
+    //         $(this).removeClass('disabled'); 
+    //     }
+    //     $(this).removeClass('arrow-off-white-icon');
+    // });
+
 });
 
 

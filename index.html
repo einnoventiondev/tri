@@ -171,7 +171,7 @@
 			<div class="container">
 				<div class="row map-view-slect-box-row" data-aos="fade-up"data-aos-easing="linear">
 					<div class="col-sm-12 col-md-6">
-						<select name="" id="" class="select2 form-control map-view__select-box" id="map-view__select-box1">
+						<select name="" id="" class="select2 form-control map-view__select-box arrow-off-white-icon" id="map-view__select-box1">
 							<option value="" >اختيار المدينة</option>
 							<option value="">الرياض</option>
 							<option value="">الرياض</option>
@@ -180,7 +180,7 @@
 						</select>
 					</div>
 					<div class="col-sm-12 col-md-6 ">
-						<select name="" id="" class="select2 form-control map-view__select-box" id="map-view__select-box2">
+						<select name="" id="" class="select2 form-control map-view__select-box arrow-off-white-icon" id="map-view__select-box2">
 							<option value="" selected>
 								إختيار القسم الفرعي
 							</option>
@@ -439,11 +439,11 @@
 						<div class="form-box">
 							<div class="form-box__bg"></div>
 							<form action="" class="form-box__form">
-								<input type="text" name="name" placeholder="الأسم" class="form-control form-box__input">
-								<input type="text" name="name" placeholder="الجوال" class="form-control form-box__input">
-								<input type="text" name="name" placeholder="البريد الالكتروني" class="form-control form-box__input">
-								<textarea name="" rows="12" id="" placeholder="الوصف .." class="form-control form-box__input form-box__input--textarea"></textarea>
-								<button class="form-box__btn">ارسال</button>
+								<input type="text" name="name" id="name" placeholder="الأسم" class="form-control form-box__input">
+								<input type="number" name="phone_number" pattern="\d*" id="phone_number" placeholder="الجوال" class="form-control form-box__input">
+								<input type="email" name="email" id="email" placeholder="البريد الالكتروني" class="form-control form-box__input">
+								<textarea name="discription" rows="12" id="discription" placeholder="الوصف .." class="form-control form-box__input form-box__input--textarea"></textarea>
+								<button class="form-box__btn submit-btn">ارسال</button>
 							</form>
 						</div>
 						
