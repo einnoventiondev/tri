@@ -26,11 +26,127 @@
     .slider__box-floor{
         left: auto;
     }
+    .map-tab{
+        width: 900px;
+    }
+    .mobile-view{
+        max-width: 285px;
+    }
+    .mobile-view__image{
+        width: 120px;
+    }
+    .mobil-view-absolute3.active {
+        right: -3px;
+        bottom: 73px;
+    }
+    .mobil-view-absolute4.active {
+        bottom: 201px;
+        right: 84px;
+    }
+    .mobil-view-absolute1.active {
+        bottom: 199px;
+        left: 43px;
+    }
+    .mobil-view-absolute2.active {
+        left: 80px;
+    }
+    .mobil-view-absolute2 .mobile-view-arrow {
+        top: 280px;
+    }
 }
 @media(max-width:991px){ 
     /* 768px to  991px */
     /* tablets */
-    
+    .header__content-heading,.conatct__heading{
+        padding-right: 0;
+        font-size: 140px;
+    }
+    .header__blur-box{
+        backdrop-filter: none;
+    }
+    .slider__text-box--1, .slider__text-box--3 {
+        padding-right: 0;
+    }
+    .slider__text-box-img {
+        width: 200px;
+        left: calc(50% - 75px);
+        top: 440px;
+    }
+    .slider__box-chair-desc {
+        margin-bottom: 60px;
+    }
+    .slider__text-box-heading{
+        font-size: 26px;
+    }
+    .slider__text-box-desc{
+        font-size: 16px;
+    }
+    .map-view-slect-box-row{
+        padding: 0;
+    }
+    .map-tab{
+        width: 100%;
+    }
+    .map-tab-dot4 {
+        top: -29px;
+    }
+    .map-tab-dot3 {
+        right: 22px;
+    }
+    .map-tab-dot2 {
+        bottom: 104px;
+        left: 79px;
+    }
+    .map-tab-dot1 {
+        top: 29px;
+        left: 53px;
+    }
+    .mobil-view-absolute4.active {
+        bottom: 88px;
+        right: 6px;
+    }
+    .mobil-view-absolute3.active {
+        right: -35px;
+        bottom: 28px;
+    }
+    .mobile-view-arrow {
+        width: 18px;
+        height: 18px;
+        left: -7px;
+    }
+    .mobil-view-absolute3 .mobile-view-arrow {
+        top: 260px;
+    }
+    .mobile-view__image {
+        width: 110px;
+    }
+    .mobile-view {
+        max-width: 265px;
+    }
+    .mobil-view-absolute1.active {
+        bottom: 109px;
+        left: -16px;
+    }
+    .mobil-view-absolute1 .mobile-view-arrow {
+        right: -7px;
+    }
+    .mobil-view-absolute2.active {
+        left: 9px;
+    }
+    .mobil-view-absolute2 .mobile-view-arrow {
+        top: 332px;
+        right: -7px;
+    }
+    .conatct-form-wrapper{
+        padding: 0;
+    }
+    .form-box-outer {
+        padding: 0;
+    }
+    .conatct__bg-img {
+        top: 66px;
+        left: -291px;
+    }
 }
 @media(max-width:767px){
     /* 540px to  767px */

@@ -57,6 +57,25 @@ $(document).ready(function() {
         $('.mobil-view-absolute3').removeClass('active');
         $('.mobil-view-absolute4').toggleClass('active');
     });
+    $('body').click(function() {
+		$('.map-tab-dot').removeClass("active");
+		$('.mobil-view-absolute').removeClass("active");
+	});
+	$('.mobil-view-absolute').click(function(event) {
+		event.stopPropagation(); // prevents executing the above event
+	});
+	$('.map-tab-dot').click(function(event) {
+		event.stopPropagation(); // prevents executing the above event
+	});
+    // mobile tabs end
+    $('.map-toggle__input').click(function(){
+        if($(this).prop("checked") == true){
+            $('.map-tab-dots').addClass('show');
+        }
+        else if($(this).prop("checked") == false){
+            $('.map-tab-dots').removeClass('show');
+        }
+    });
 });
 
 
