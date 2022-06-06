@@ -802,7 +802,6 @@ option::selection{
 	height: 40px;
 	display: flex;
 	justify-content: center;
-	background-color: var(--mid-black);
 	cursor: pointer;
 	align-items: center;
 	text-align: center;
@@ -813,6 +812,7 @@ option::selection{
 	margin: auto;
 	transition: all 0.3s ease-in-out;
 	box-shadow: 0 0 0 2px var(--chocolate);
+	background-color: var(--light-green);
 }
 .form-box__btn:hover{
 	color: var(--chocolate);
@@ -821,6 +821,7 @@ option::selection{
 .form-box__btn.disabled{
 	pointer-events: none;
 	box-shadow: none;
+	background-color: var(--mid-black);
 }
 .conatct__bg-img{
 	position: absolute;
@@ -880,48 +881,43 @@ option::selection{
 	height: 5px;
 	scroll-behavior: smooth;
 	scroll-padding-top: 20px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+/* Track */
+::-webkit-scrollbar-track {
 	background-color: var(--mid-black);
 	border-radius: 10px;
 	scroll-padding-top: 20px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
 	border-radius: 25px;
 	background: var(--chocolate);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
 	cursor: pointer;
-  }
-  /*# sourceMappingURL=style.css.map */
-
-
+}
+/*# sourceMappingURL=style.css.map */
   /* asim */
-  .choclate-color{
+.choclate-color{
 	color: var(--chocolate);
 	background-color: var(--mid-black);
 	box-shadow: none;
-  }
-  .arrow-off-white-icon {
-    background-image: url(../images/down-arrow-off-white.svg);
-    background-repeat: no-repeat;
-    background-position: 20px;
-	}
-	.arrow-icon{
-		background-image: url(../images/down-arrow-chocalate.svg);
-		background-repeat: no-repeat;
-		background-position: 20px;
-	}
-	textarea{
-		resize: none;
-	}
-	input::-webkit-outer-spin-button,
-	input::-webkit-inner-spin-button {
+}
+.arrow-off-white-icon {
+	background-image: url(../images/down-arrow-off-white.svg);
+	background-repeat: no-repeat;
+	background-position: 20px;
+}
+.arrow-icon{
+	background-image: url(../images/down-arrow-chocalate.svg);
+	background-repeat: no-repeat;
+	background-position: 20px;
+}
+textarea{
+	resize: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
-	}
+}
