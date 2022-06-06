@@ -2,12 +2,6 @@
 
 $(document).ready(function() {
         
-   
-    // banner slider end
-    AOS.init({
-		offset: 200, 
-		duration: 1000
-	});
     // animation on scroll
     var owl = $('.slider-wrapper');
         owl.owlCarousel({
@@ -172,7 +166,61 @@ $(document).ready(function() {
             $('.submit-btn').addClass('disabled');
         }
     });
+
+    // Loader
+    var i = 0;
+    function move() {
+        $('.main-progress').css('z-index', '999');
+        $('.main-progress').removeClass('d-none');
+        // $('.hide-on-load').css('display', 'block');
+        var widths = 1;
+        var opacity = 1;
+        if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("bar");
+            var mainElem = document.getElementById("myProgress");
+            var logoHolder = document.getElementById("logo-holder");
+            var id = setInterval(frame, 50);
+            function frame() {
+                if (widths >= 100) {
+                    $('.main-progress').css('z-index', '0');
+                    // $('.main-progress').addClass('d-none');
+                    $('body').css('overflow', 'unset');
+                    clearInterval(id);
+                    // $('.hide-on-load').fadeTo(1000, 1);
+                    // $(".main-progress").fadeTo(1200, 0);
+                    
+                    setTimeout(() => {
+                    $('.hide-on-load').css('visibility', 'visible');
+                    $('.hide-blur').css('display', 'block');
+                    $('.header__content-img').addClass('okImg-animate');
+                    // banner slider end
+                    AOS.init({
+                        offset: 200, 
+                        duration: 1000
+                    });
+                    gsap.from('.header__img-chocolate', {duration:1.5,	delay:0.5, 	backgroundPosition:'-1350px 0'});
+                    gsap.from('.header__content-img', 	{duration:1.5, 	delay:1,  y: 700});
+                    gsap.from('.header__img-green', 	{duration:1.5, 	delay:1.5,   	x: 1000});
+                    gsap.from('.header__blur-box', 		{duration:2, 	delay:3,  x:'1350px'});
+                    }, 1000);
+                    
+                    
+                } else {
+                    $('body').css('overflow', 'hidden');
+                    $(".main-progress").css('display', 'block')
+                    widths++;
+                    opacity++;
+                    $('#myBar').html(widths + " %");
+                    $('#myProgress').css(opacity + " %");
+                    $('.logo-holder').css(opacity + " %");
+                    // $('.progress-bar').css("width", widths + "%");
+                    elem.style.width = widths + "%";
+                    mainElem.style.opacity = opacity + "%";
+                    logoHolder.style.opacity = opacity + "%";
+                }
+            }
+        }
+    }
+    move();
 });
-
-
-		
