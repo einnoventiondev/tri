@@ -163,6 +163,13 @@
     .header__content-heading{
         margin-bottom: 30px;
     }
+    .greenImg {
+        top: 80px !important;
+        left: 30px;
+    }
+    .main-progress{
+        width: 20%;
+    }
 }
 @media(max-width:767px){
     .container-modified{
@@ -454,6 +461,20 @@
     .map-tab-dot2 {
         left: 101px;
         top: -91px;
+    }
+    .brownImg{
+        width: 270px;
+    }
+    .greenImg {
+        top: 80px !important;
+        left: -3px;
+        width: 170px;
+    }
+    .main-progress .progress{
+        font-size: 22px;
+    }
+    .main-progress .progress{
+        bottom: -140px;
     }
 }
 @media(max-width:359px){

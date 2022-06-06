@@ -164,7 +164,7 @@ a:hover{
     margin: auto;
     top: 0;
     display: flex!important;
-    bottom: -30px;
+    bottom: -180px;
     justify-content: center;
     color: #F2F2F2;
     direction: ltr;
@@ -195,7 +195,7 @@ a:hover{
 	margin: auto;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: calc(36% - 80px);
 	display: none;
 	z-index: 999;
   }
@@ -215,8 +215,8 @@ a:hover{
 		top: 40px !important;
 	}
 	.greenImg {
-		top: 115px !important;
-		left: 80px;
+		top: 100px !important;
+		left: 40px;
 	}
 	#myProgress {
 		opacity: 0;
