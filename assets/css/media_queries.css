@@ -474,7 +474,7 @@
         font-size: 22px;
     }
     .main-progress .progress{
-        bottom: -140px;
+        bottom: -180px;
     }
 }
 @media(max-width:359px){

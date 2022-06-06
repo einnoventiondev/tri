@@ -8,10 +8,11 @@ $(document).ready(function() {
         animateOut: 'animate__fadeOutLeft',
         animateIn: 'animate__fadeInRight',
         loop: true,
+        rtl:true,
         dots: true,
         nav: false,
         items: 1,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         smartSpeed: 1000
     });
@@ -202,7 +203,7 @@ $(document).ready(function() {
                     gsap.from('.header__img-chocolate', {duration:1.5,	delay:0.5, 	backgroundPosition:'-1350px 0'});
                     gsap.from('.header__content-img', 	{duration:1.5, 	delay:1,  y: 700});
                     gsap.from('.header__img-green', 	{duration:1.5, 	delay:1.5,   	x: 1000});
-                    gsap.from('.header__blur-box', 		{duration:2, 	delay:3,  x:'1350px'});
+                    gsap.from('.header__blur-box', 		{duration:1.5, 	delay:2,  x:'1350px'});
                     // }, 1000);
                     
                     
