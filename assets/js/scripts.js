@@ -184,11 +184,11 @@ $(document).ready(function() {
             function frame() {
                 if (widths >= 100) {
                     $('.main-progress').css('z-index', '0');
-                    // $('.main-progress').addClass('d-none');
+                    $('.main-progress').addClass('d-none');
                     $('body').css('overflow', 'unset');
                     clearInterval(id);
                     // $('.hide-on-load').fadeTo(1000, 1);
-                    // $(".main-progress").fadeTo(1200, 0);
+                    $(".main-progress").fadeTo(1200, 0);
                     
                     setTimeout(() => {
                     $('.hide-on-load').css('visibility', 'visible');
