@@ -95,15 +95,83 @@ $(document).ready(function() {
         $(this).removeClass('arrow-off-white-icon');
         $(this).addClass('choclate-color arrow-icon');
     });
-    // form validation
-    // $('.form-control').keyup(function(){
-    //    var val = $(this).value();
-    //     if(val.length() > 0){
-    //         $(this).removeClass('disabled'); 
-    //     }
-    //     $(this).removeClass('arrow-off-white-icon');
-    // });
-
+    $('.form-box__input:not(.email)').keyup(function () {
+        if ($(this).val().length === 0) {
+            $(this).val($.trim($(this).val()));
+            $(this).removeClass('field-blue');
+            $(this).removeClass('field-red');
+        } else if ($(this).val().length > 1) {
+            $(this).addClass('field-blue');
+            $(this).removeClass('field-red');
+        } else {
+            $(this).val($.trim($(this).val()));
+            $(this).removeClass('field-blue');
+            $(this).addClass('field-red');
+        }
+    })
+    $(".email").keyup(function(){
+        var email = $(".email").val();
+        if(isValidEmailAddress(email))
+        {
+            $('.email').addClass('field-blue');
+            $('.email').removeClass('field-red');
+        } else {
+            $('.email').addClass('field-red');
+            $('.email').removeClass('field-blue');
+        }
+    });
+    function isValidEmailAddress(emailAddress) {
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        return pattern.test(emailAddress);
+    }
+    $('.form-box__input.name').keyup(function () {
+        if(
+            $(this).hasClass('field-blue')  &&
+            $('.form-box__input.phone').hasClass('field-blue') &&
+            $('.form-box__input.message').hasClass('field-blue') &&
+            $('.form-box__input.email').hasClass('field-blue')
+        ){
+            $('.submit-btn').removeClass('disabled');
+        }else{
+            $('.submit-btn').addClass('disabled');
+        }
+    });
+    $('.form-box__input.email').keyup(function () {
+        if(
+            $(this).hasClass('field-blue')  &&
+            $('.form-box__input.phone').hasClass('field-blue') &&
+            $('.form-box__input.name').hasClass('field-blue') &&
+            $('.form-box__input.message').hasClass('field-blue')
+        ){
+            $('.submit-btn').removeClass('disabled');
+        }else{
+            $('.submit-btn').addClass('disabled');
+        }
+    });
+    $('.form-box__input.phone').keyup(function () {
+        if(
+            $(this).hasClass('field-blue')  &&
+            $('.form-box__input.email').hasClass('field-blue') &&
+            $('.form-box__input.name').hasClass('field-blue') &&
+            $('.form-box__input.message').hasClass('field-blue')
+        ){
+            $('.submit-btn').removeClass('disabled');
+        }else{
+            $('.submit-btn').addClass('disabled');
+        }
+    });
+    $('.form-box__input.message').keyup(function () {
+        if(
+            $(this).hasClass('field-blue')  &&
+            $('.form-box__input.email').hasClass('field-blue') &&
+            $('.form-box__input.name').hasClass('field-blue') &&
+            $('.form-box__input.phone').hasClass('field-blue')
+        ){
+            $('.submit-btn').removeClass('disabled');
+        }else{
+            $('.submit-btn').addClass('disabled');
+        }
+    });
 });
 
 

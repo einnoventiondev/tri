@@ -301,6 +301,7 @@ a:hover{
 	border-radius: 40px;
 	color: var(--off-white);
 	position: relative;
+	cursor: pointer;
 }
 .map-view__select-box::after{
 	content: url(../images/down-arrow-off-white.svg);
@@ -693,6 +694,18 @@ option::selection{
 	font-size: 16px;
 	margin-bottom: 32px;
 }
+.field-red:focus{
+	border-color: red !important;
+}
+.field-red{
+	border: 2px solid red !important;
+}
+.field-blue:focus{
+	border-color: #ced4da !important;
+}
+.field-blue{
+	border: 2px solid #ced4da;
+}
 .form-box__input::placeholder{
 	color: #fff;
 	font-size: 16px;
@@ -719,11 +732,15 @@ option::selection{
 	outline: none;
 	margin: auto;
 	transition: all 0.3s ease-in-out;
+	box-shadow: 0 0 0 2px var(--chocolate);
 }
 .form-box__btn:hover{
 	color: var(--chocolate);
-	box-shadow: 0 0 0 2px var(--chocolate);
 	transition: all 0.3s ease-in-out;
+}
+.form-box__btn.disabled{
+	pointer-events: none;
+	box-shadow: none;
 }
 .conatct__bg-img{
 	position: absolute;
