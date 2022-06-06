@@ -466,6 +466,21 @@ option::selection{
 	position: relative;
 	margin-bottom: 50px;
 }
+.map-tab__img g path{
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+.map-tab__img g path:hover,
+.map-tab__img g path.active{
+	fill: var(--chocolate);
+	transition: all 0.3s ease-in-out;
+}
+.deactive{
+	fill: var(--mid-black);
+}
+.map-part.active{
+	fill: var(--chocolate);
+}
 .map-tab__text{
 	position: absolute;
 	top: 50%;

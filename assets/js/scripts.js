@@ -224,4 +224,9 @@ $(document).ready(function() {
         }
     }
     move();
+    $('.map-part').click(function(){
+        $(this).prevAll().attr("class", "deactive");
+        $(this).nextAll().attr("class", "deactive");
+        $(this).attr("class", "active");
+    })
 });
