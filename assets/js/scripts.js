@@ -189,7 +189,7 @@ $(document).ready(function() {
                     $('body').css('overflow', 'unset');
                     clearInterval(id);
                     $('.hide-on-load').fadeTo(1000, 1);
-                    // $(".main-progress").fadeTo(1200, 0);
+                    $(".main-progress").fadeTo(1200, 0);
                     
                     // setTimeout(() => {
                     $('.hide-on-load').css('visibility', 'visible');
