@@ -260,8 +260,10 @@ $(document).ready(function () {
 
         $(map).css("left", adjX);
         $(map).css("top", adjY);
-        document.body.appendChild(map);
-        return map;
+
+        var mapPart = document.getElementsByClassName('path-active');
+        document.body.appendChild(mapPart);
+        return mapPart;
     }
 
 });
