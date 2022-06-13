@@ -539,6 +539,11 @@ option::selection{
 	opacity: 1;
 	transition: all 0.3s ease-in-out;
 }
+.map-tab-dot5 {
+    position: absolute;
+    bottom: 80px;
+    left: 150px;
+}
 .map-tab-dot4{
 	position: absolute;
     top: 15px;

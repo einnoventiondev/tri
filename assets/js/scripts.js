@@ -25,6 +25,7 @@ $(document).ready(function() {
         $('.mobil-view-absolute2').removeClass('active');
         $('.mobil-view-absolute3').removeClass('active');
         $('.mobil-view-absolute4').removeClass('active');
+        $('.mobil-view-absolute5').removeClass('active');
     });
     $('.map-tab-dot2').click(function(){
         $(this).toggleClass('active');
