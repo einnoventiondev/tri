@@ -553,7 +553,9 @@ option::selection {
 }
 
 /* check box end */
-
+.map{
+	width: 100% !important;
+}
 /* dots */
 .map-tab__img-holder {
 	text-align: center;
@@ -582,6 +584,7 @@ option::selection {
 
 .map-tab__text {
 	position: absolute;
+	font-size: 14px;
 }
 #path29 {
     top: 15%;

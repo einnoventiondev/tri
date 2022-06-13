@@ -53,6 +53,57 @@
     .mobil-view-absolute2 .mobile-view-arrow {
         top: 280px;
     }
+    #path31 {
+        top: 14%;
+        right: 75%;
+    }
+    #path29 {
+        top: 17%;
+        right: 57%;
+    }
+    #path35 {
+        top: 26%;
+        right: 82%;
+    }
+    #path48 {
+        top: 29%;
+        right: 64%;
+    }
+    #path56 {
+        top: 37%;
+        right: 56%;
+    }
+    #path36 {
+        top: 46%;
+        right: 73%;
+    }
+    #path37 {
+        top: 65%;
+        right: 66%;
+    }
+    #path52 {
+        top: 75%;
+        right: 65.5%;
+    }
+    #path42 {
+        top: 57%;
+        right: 46%;
+    }
+    #path27 {
+        top: 66%;
+        right: 24%;
+    }
+    #path24 {
+        top: 80%;
+        right: 58%;
+    }
+    #path23 {
+        top: 92%;
+        right: 59%;
+    }
+    .form-box-outer {
+        padding: 0 40px;
+    }
 }
 @media(max-width:991px){ 
     /* 768px to  991px */
@@ -169,6 +220,34 @@
     }
     .main-progress{
         width: 20%;
+    }
+    #path29 {
+        top: 22%;
+        right: 58%;
+    }
+    #path31 {
+        top: 21%;
+        right: 76%;
+    }
+    #path35 {
+        top: 30%;
+        right: 82%;
+    }
+    #path48 {
+        top: 32%;
+        right: 65%;
+    }
+    #path56 {
+        top: 39%;
+        right: 56%;
+    }
+    #path42 {
+        top: 55%;
+        right: 45%;
+    }
+    #path37 {
+        top: 61%;
+        right: 65%;
     }
 }
 @media(max-width:767px){
