@@ -1159,9 +1159,12 @@ input::-webkit-inner-spin-button {
 }
 
 .map-dot {
+	position: absolute;
 	display: flex;
-	width: 270px;
-	height: 350px;
+    justify-content: center;
+    align-items: center;
+	width: 100px;
+	height: 100px;
 	/* opacity: 0;
 	z-index: -999; */
 	transition: all 0.3s ease-in-out;

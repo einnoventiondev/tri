@@ -240,7 +240,7 @@ $(document).ready(function () {
 
     function addLocation(x, y) {
         // let e = document.createElement('dot');
-        // $(e).addClass("circle");
+        // $(e).addClass("map-dot");
         let map = document.createElement('div');
         let dot = document.createElement('div');
         let outerDot = document.createElement('div');
@@ -260,8 +260,10 @@ $(document).ready(function () {
 
         $(map).css("left", adjX);
         $(map).css("top", adjY);
-        document.body.appendChild(map);
-        return map;
+
+        var mapPart = document.getElementsByClassName('path-active');
+        document.body.appendChild(mapPart);
+        return mapPart;
     }
 
 });
