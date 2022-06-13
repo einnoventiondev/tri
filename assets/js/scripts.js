@@ -231,11 +231,23 @@ $(document).ready(function () {
     })
 
     // Add Location on map
-    $(document).on("click", function (e) {
+    $('#map-view .container').on("click", function (e) {
         let x = e.pageX;
         let y = e.pageY;
 
-        addLocation(x, y);
+        Swal.fire({
+            title: 'هل تريد الاستمرار؟',
+            icon: 'question',
+            iconHtml: '؟',
+            confirmButtonText: 'نعم',
+            cancelButtonText: 'لا',
+            showCancelButton: true,
+            showCloseButton: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                addLocation(x, y);
+            }
+        })
     });
 
     function addLocation(x, y) {
@@ -254,14 +266,14 @@ $(document).ready(function () {
         dot.appendChild(outerDot);
         dot.appendChild(innerDot);
         map.appendChild(dot);
-        
+
         let adjX = x - 50; //click happens in center
         let adjY = y - 50;
 
         $(map).css("left", adjX);
         $(map).css("top", adjY);
 
-        $('.map-tab').append(map);
+        $('#map-view .container').append(map);
 
         return map;
     }
