@@ -471,7 +471,6 @@ a:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
-
 }
 
 .form-control:focus {
@@ -586,7 +585,18 @@ option::selection {
 	top: 50%;
 	left: 50%;
 }
-
+#path29 {
+    top: 111px;
+    right: 620px;
+}
+#path31 {
+    top: 99px;
+    right: 771px;
+}
+#path48{
+    top: 195px;
+    right: 676px;
+}
 .map-tab-dots {
 	display: flex;
 	width: 270px;
