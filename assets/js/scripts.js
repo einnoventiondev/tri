@@ -261,7 +261,7 @@ $(document).ready(function () {
         $(map).css("left", adjX);
         $(map).css("top", adjY);
 
-        var mapPart = document.getElementsByClassName('path-active');
+        var mapPart = document.getElementsByClassName('pathactive');
         document.body.appendChild(mapPart);
         return mapPart;
     }
