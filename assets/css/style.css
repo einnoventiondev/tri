@@ -617,7 +617,6 @@ option::selection {
 
 .map-tab-dot {
 	cursor: pointer;
-
 }
 
 .dot-relative {
@@ -1139,4 +1138,13 @@ input::-webkit-inner-spin-button {
 	background-color: rgba(0, 0, 255, 0.9);
 	border: 2px solid black;
 	position: absolute;
+}
+
+.map-dot {
+	display: flex;
+	width: 270px;
+	height: 350px;
+	/* opacity: 0;
+	z-index: -999; */
+	transition: all 0.3s ease-in-out;
 }
