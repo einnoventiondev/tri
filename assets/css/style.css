@@ -1189,8 +1189,8 @@ input::-webkit-inner-spin-button {
 .map-dot {
 	position: absolute;
 	display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    /* align-items: center; */
 	width: 100px;
 	height: 100px;
 	/* opacity: 0;

@@ -231,7 +231,7 @@ $(document).ready(function () {
     })
 
     // Add Location on map
-    $('#map-view .container').on("click", function (e) {
+    $('#map-view path').on("click", function (e) {
         let x = e.pageX;
         let y = e.pageY;
 
@@ -267,13 +267,14 @@ $(document).ready(function () {
         dot.appendChild(innerDot);
         map.appendChild(dot);
 
-        let adjX = x - 50; //click happens in center
-        let adjY = y - 50;
+        let adjX = x - 15; //click happens in center
+        let adjY = y - 10;
 
         $(map).css("left", adjX);
         $(map).css("top", adjY);
 
         $('#map-view .container').append(map);
+        // $('.map-part').append(map);
 
         return map;
     }
