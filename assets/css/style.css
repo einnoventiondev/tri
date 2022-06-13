@@ -580,6 +580,7 @@ option::selection {
 
 .map-part.pathactive {
 	fill: var(--chocolate);
+	transform: scale(2);
 }
 
 .map-tab__text {
