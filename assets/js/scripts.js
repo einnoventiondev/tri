@@ -184,27 +184,27 @@ $(document).ready(function () {
             var id = setInterval(frame, 50);
             function frame() {
                 // if (widths >= 100) {
-                    $('.main-progress').css('z-index', '0');
-                    // $('.main-progress').addClass('d-none');
-                    $('body').css('overflow', 'unset');
-                    clearInterval(id);
-                    $('.hide-on-load').fadeTo(1000, 1);
-                    $(".main-progress").fadeTo(1200, 0);
+                $('.main-progress').css('z-index', '0');
+                // $('.main-progress').addClass('d-none');
+                $('body').css('overflow', 'unset');
+                clearInterval(id);
+                $('.hide-on-load').fadeTo(1000, 1);
+                $(".main-progress").fadeTo(1200, 0);
 
-                    // setTimeout(() => {
-                    $('.hide-on-load').css('visibility', 'visible');
-                    $('.hide-blur').css('display', 'block');
-                    $('.header__content-img').addClass('okImg-animate');
-                    // banner slider end
-                    AOS.init({
-                        offset: 200,
-                        duration: 1000
-                    });
-                    gsap.from('.header__img-chocolate', { duration: 1.5, delay: 0.5, backgroundPosition: '-1350px 0' });
-                    gsap.from('.header__content-img', { duration: 1.5, delay: 1, y: 700 });
-                    gsap.from('.header__img-green', { duration: 1.5, delay: 1.5, x: 1000 });
-                    gsap.from('.header__blur-box', { duration: 1.5, delay: 2, x: '1350px' });
-                    // }, 1000);
+                // setTimeout(() => {
+                $('.hide-on-load').css('visibility', 'visible');
+                $('.hide-blur').css('display', 'block');
+                $('.header__content-img').addClass('okImg-animate');
+                // banner slider end
+                AOS.init({
+                    offset: 200,
+                    duration: 1000
+                });
+                gsap.from('.header__img-chocolate', { duration: 1.5, delay: 0.5, backgroundPosition: '-1350px 0' });
+                gsap.from('.header__content-img', { duration: 1.5, delay: 1, y: 700 });
+                gsap.from('.header__img-green', { duration: 1.5, delay: 1.5, x: 1000 });
+                gsap.from('.header__blur-box', { duration: 1.5, delay: 2, x: '1350px' });
+                // }, 1000);
 
 
                 // } else {
@@ -239,15 +239,16 @@ $(document).ready(function () {
     });
 
     function addLocation(x, y) {
-        let e = document.createElement('div');
-        $(e).addClass("circle");
+        // let e = document.createElement('dot');
+        // $(e).addClass("circle");
+        let e = "<li>Appended item</li>";
 
         let adjX = x - 50; //click happens in center
         let adjY = y - 50;
 
         $(e).css("left", adjX);
         $(e).css("top", adjY);
-        document.body.appendChild(e);
+        document.body.append("<li>Appended item</li>");
         return e;
     }
 
