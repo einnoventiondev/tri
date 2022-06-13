@@ -172,7 +172,7 @@ $(document).ready(function () {
     var i = 0;
     function move() {
         $('.main-progress').css('z-index', '999');
-        $('.main-progress').removeClass('d-none');
+        // $('.main-progress').removeClass('d-none');
         // $('.hide-on-load').css('display', 'block');
         var widths = 1;
         var opacity = 1;
@@ -183,7 +183,7 @@ $(document).ready(function () {
             var logoHolder = document.getElementById("logo-holder");
             var id = setInterval(frame, 50);
             function frame() {
-                if (widths >= 100) {
+                // if (widths >= 100) {
                     $('.main-progress').css('z-index', '0');
                     // $('.main-progress').addClass('d-none');
                     $('body').css('overflow', 'unset');
@@ -207,23 +207,23 @@ $(document).ready(function () {
                     // }, 1000);
 
 
-                } else {
-                    $('body').css('overflow', 'hidden');
-                    $(".main-progress").css('display', 'block')
-                    widths++;
-                    opacity++;
-                    $('#myBar').html(widths + " %");
-                    $('#myProgress').css(opacity + " %");
-                    $('.logo-holder').css(opacity + " %");
-                    // $('.progress-bar').css("width", widths + "%");
-                    elem.style.width = widths + "%";
-                    mainElem.style.opacity = opacity + "%";
-                    logoHolder.style.opacity = opacity + "%";
-                }
+                // } else {
+                //     $('body').css('overflow', 'hidden');
+                //     $(".main-progress").css('display', 'block')
+                //     widths++;
+                //     opacity++;
+                //     $('#myBar').html(widths + " %");
+                //     $('#myProgress').css(opacity + " %");
+                //     $('.logo-holder').css(opacity + " %");
+                //     // $('.progress-bar').css("width", widths + "%");
+                //     elem.style.width = widths + "%";
+                //     mainElem.style.opacity = opacity + "%";
+                //     logoHolder.style.opacity = opacity + "%";
+                // }
             }
         }
     }
-    // move();
+    move();
     $('.map-part').click(function () {
         $(this).prevAll().attr("class", "deactive");
         $(this).nextAll().attr("class", "deactive");
