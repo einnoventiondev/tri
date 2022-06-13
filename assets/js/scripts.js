@@ -227,7 +227,7 @@ $(document).ready(function () {
     $('.map-part').click(function () {
         $(this).prevAll().attr("class", "deactive");
         $(this).nextAll().attr("class", "deactive");
-        $(this).attr("class", "active");
+        $(this).attr("class", "pathactive");
     })
 
     // Add Location on map
