@@ -241,15 +241,27 @@ $(document).ready(function () {
     function addLocation(x, y) {
         // let e = document.createElement('dot');
         // $(e).addClass("circle");
-        let e = "<li>Appended item</li>";
+        let map = document.createElement('div');
+        let dot = document.createElement('div');
+        let outerDot = document.createElement('div');
+        let innerDot = document.createElement('div');
 
+        map.classList.add('map-dot');
+        dot.classList.add('dot-relative');
+        outerDot.classList.add('map-tab-dot__bg');
+        innerDot.classList.add('map-tab-dot__inner');
+
+        dot.appendChild(outerDot);
+        dot.appendChild(innerDot);
+        map.appendChild(dot);
+        
         let adjX = x - 50; //click happens in center
         let adjY = y - 50;
 
-        $(e).css("left", adjX);
-        $(e).css("top", adjY);
-        document.body.append("<li>Appended item</li>");
-        return e;
+        $(map).css("left", adjX);
+        $(map).css("top", adjY);
+        document.body.appendChild(map);
+        return map;
     }
 
 });
