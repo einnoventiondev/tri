@@ -567,7 +567,7 @@ option::selection {
 }
 
 .map-tab__img g path:hover,
-.map-tab__img g path.active {
+.map-tab__img g path.pathactive {
 	fill: var(--chocolate);
 	transition: all 0.3s ease-in-out;
 }
@@ -576,14 +576,12 @@ option::selection {
 	fill: var(--mid-black);
 }
 
-.map-part.active {
+.map-part.pathactive {
 	fill: var(--chocolate);
 }
 
 .map-tab__text {
 	position: absolute;
-	top: 50%;
-	left: 50%;
 }
 #path29 {
     top: 111px;
@@ -602,16 +600,20 @@ option::selection {
     right: 841px;
 }
 #path27 {
-    top: 464px;
-    right: 61px;
+    top: 482px;
+    right: 290px;
 }
 #path56 {
     top: 264px;
     right: 602px;
 }
 #path36 {
-    top: 264px;
-    right: 602px;
+    top: 328px;
+    right: 757px;
+}
+#path42 {
+    top: 53%;
+    right: 47%;
 }
 .map-tab-dots {
 	display: flex;
