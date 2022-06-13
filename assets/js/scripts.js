@@ -236,9 +236,9 @@ $(document).ready(function () {
         let y = e.pageY;
 
         Swal.fire({
-            title: 'هل تريد الاستمرار؟',
+            title: 'هل أنت متأكد أنك تريد إضافة الموقع؟',
             icon: 'question',
-            iconHtml: '؟',
+            iconHtml: '&#128512;',
             confirmButtonText: 'نعم',
             cancelButtonText: 'لا',
             showCancelButton: true,

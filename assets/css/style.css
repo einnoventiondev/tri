@@ -1190,9 +1190,12 @@ input::-webkit-inner-spin-button {
 	display: flex;
     justify-content: end;
     /* align-items: center; */
-	width: 100px;
-	height: 100px;
+	width: 35px;
+	height: 35px;
 	/* opacity: 0;
 	z-index: -999; */
 	transition: all 0.3s ease-in-out;
+}
+.swal2-icon .swal2-icon-content {
+    font-size: 4.75em !important;
 }
