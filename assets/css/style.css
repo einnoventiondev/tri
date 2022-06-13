@@ -584,36 +584,60 @@ option::selection {
 	position: absolute;
 }
 #path29 {
-    top: 111px;
-    right: 620px;
+    top: 15%;
+    right: 57%;
 }
 #path31 {
-    top: 99px;
-    right: 771px;
+    top: 13%;
+    right: 71%;
 }
-#path48{
-    top: 195px;
-    right: 676px;
+#path48 {
+    top: 28%;
+    right: 61%;
 }
 #path35 {
-    top: 180px;
-    right: 841px;
+    top: 25%;
+    right: 77%;
 }
 #path27 {
-    top: 482px;
-    right: 290px;
+    top: 65%;
+    right: 26%;
 }
 #path56 {
-    top: 264px;
-    right: 602px;
+    top: 37%;
+    right: 55%;
 }
 #path36 {
-    top: 328px;
-    right: 757px;
+    top: 46%;
+    right: 68%;
 }
 #path42 {
     top: 53%;
     right: 47%;
+}
+#path37 {
+    top: 64%;
+    right: 62%;
+}
+#path52 {
+    top: 64%;
+    right: 62%;
+}
+#path52 {
+    top: 74%;
+    right: 62%;
+}
+#path24 {
+    top: 80%;
+    right: 56%;
+}
+#path26 {
+    top: 86%;
+    right: 46%;
+}
+#path23 {
+    top: 92%;
+    right: 57%;
 }
 .map-tab-dots {
 	display: flex;
