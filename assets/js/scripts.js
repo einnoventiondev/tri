@@ -252,14 +252,14 @@ $(document).ready(function () {
         var city = $(this).attr('city');
 
         // if(turn === 1) {
-            // $('.map-dot').addClass('d-none');
-            $('.'+city).removeClass('d-none');
-            // $('.'+city).nextAll('.map-dot').addClass('d-none');
-            // $('.'+city).prevAll('.map-dot').addClass('d-none');
-            $('.map-dot').not('.'+city).addClass('d-none');
+        // $('.map-dot').addClass('d-none');
+        $('.' + city).removeClass('d-none');
+        // $('.'+city).nextAll('.map-dot').addClass('d-none');
+        // $('.'+city).prevAll('.map-dot').addClass('d-none');
+        $('.map-dot').not('.' + city).addClass('d-none');
         // }
-        
-        if($(this).attr('turn') === '2') {
+
+        if ($(this).attr('turn') === '2') {
             Swal.fire({
                 title: 'هل أنت متأكد أنك تريد إضافة الموقع؟',
                 icon: 'question',
@@ -277,7 +277,7 @@ $(document).ready(function () {
                     // $('.mobil-view-absolute4').toggleClass('active');
                     $('.mobil-view-absolute').slideToggle('slow');
                     setTimeout(() => {
-                        window.location= '#location-form';
+                        window.location = '#location-form';
                     }, 300);
                 }
                 turn = 0;
@@ -287,7 +287,6 @@ $(document).ready(function () {
     });
 
     function addLocation(x, y, city) {
-        
         let map = document.createElement('div');
         let dot = document.createElement('div');
         let outerDot = document.createElement('div');
@@ -314,4 +313,29 @@ $(document).ready(function () {
         return map;
     }
 
+    if (window.File && window.FileList && window.FileReader) {
+        $("#files").on("change", function(e) {
+          var files = e.target.files,
+            filesLength = files.length;
+          for (var i = 0; i < filesLength; i++) {
+            var f = files[i]
+            var fileReader = new FileReader();
+            fileReader.onload = (function(e) {
+              var file = e.target;
+              $("<span class=\"pip\">" +
+                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                "<br/><span class=\"remove\"><i class='fa-solid fa-circle-xmark'></i></span>" +
+                "</span>").insertAfter("#files");
+              $(".remove").click(function(){
+                $(this).parent(".pip").remove();
+              });
+            });
+            fileReader.readAsDataURL(f);
+          }
+        });
+      } else {
+        alert("Your browser doesn't support to File API")
+      }
+
 });
+
