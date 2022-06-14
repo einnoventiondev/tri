@@ -17,48 +17,49 @@ $(document).ready(function () {
         smartSpeed: 1000
     });
 
-    $('.map-tab-dot1').click(function () {
-        $(this).toggleClass('active');
-        $(this).prevAll().removeClass('active');
-        $(this).nextAll().removeClass('active');
-        $('.mobil-view-absolute1').toggleClass('active');
-        $('.mobil-view-absolute2').removeClass('active');
-        $('.mobil-view-absolute3').removeClass('active');
-        $('.mobil-view-absolute4').removeClass('active');
-        $('.mobil-view-absolute5').removeClass('active');
-    });
-    $('.map-tab-dot2').click(function () {
-        $(this).toggleClass('active');
-        $(this).prevAll().removeClass('active');
-        $(this).nextAll().removeClass('active');
-        $('.mobil-view-absolute1').removeClass('active');
-        $('.mobil-view-absolute2').toggleClass('active');
-        $('.mobil-view-absolute3').removeClass('active');
-        $('.mobil-view-absolute4').removeClass('active');
-    });
-    $('.map-tab-dot3').click(function () {
-        $(this).toggleClass('active');
-        $(this).prevAll().removeClass('active');
-        $(this).nextAll().removeClass('active');
-        $('.mobil-view-absolute1').removeClass('active');
-        $('.mobil-view-absolute2').removeClass('active');
-        $('.mobil-view-absolute3').toggleClass('active');
-        $('.mobil-view-absolute4').removeClass('active');
-    });
-    $('.map-tab-dot4').click(function () {
-        $(this).toggleClass('active');
-        $(this).prevAll().removeClass('active');
-        $(this).nextAll().removeClass('active');
-        $('.mobil-view-absolute1').removeClass('active');
-        $('.mobil-view-absolute2').removeClass('active');
-        $('.mobil-view-absolute3').removeClass('active');
-        $('.mobil-view-absolute4').toggleClass('active');
-    });
-    $('body').click(function () {
-        $('.map-tab-dot').removeClass("active");
-        $('.mobil-view-absolute').removeClass("active");
-        $('.map-tab__list').removeClass('mobile-margin');
-    });
+    // $('.map-tab-dot1').click(function () {
+    //     $(this).toggleClass('active');
+    //     $(this).prevAll().removeClass('active');
+    //     $(this).nextAll().removeClass('active');
+    //     $('.mobil-view-absolute1').toggleClass('active');
+    //     $('.mobil-view-absolute2').removeClass('active');
+    //     $('.mobil-view-absolute3').removeClass('active');
+    //     $('.mobil-view-absolute4').removeClass('active');
+    //     $('.mobil-view-absolute5').removeClass('active');
+    // });
+    // $('.map-tab-dot2').click(function () {
+    //     $(this).toggleClass('active');
+    //     $(this).prevAll().removeClass('active');
+    //     $(this).nextAll().removeClass('active');
+    //     $('.mobil-view-absolute1').removeClass('active');
+    //     $('.mobil-view-absolute2').toggleClass('active');
+    //     $('.mobil-view-absolute3').removeClass('active');
+    //     $('.mobil-view-absolute4').removeClass('active');
+    // });
+    // $('.map-tab-dot3').click(function () {
+    //     $(this).toggleClass('active');
+    //     $(this).prevAll().removeClass('active');
+    //     $(this).nextAll().removeClass('active');
+    //     $('.mobil-view-absolute1').removeClass('active');
+    //     $('.mobil-view-absolute2').removeClass('active');
+    //     $('.mobil-view-absolute3').toggleClass('active');
+    //     $('.mobil-view-absolute4').removeClass('active');
+    // });
+    // $('.map-tab-dot4').click(function () {
+    //     $(this).toggleClass('active');
+    //     $(this).prevAll().removeClass('active');
+    //     $(this).nextAll().removeClass('active');
+    //     $('.mobil-view-absolute1').removeClass('active');
+    //     $('.mobil-view-absolute2').removeClass('active');
+    //     $('.mobil-view-absolute3').removeClass('active');
+    //     $('.mobil-view-absolute4').toggleClass('active');
+    // });
+
+    // $('body').click(function () {
+    //     $('.map-tab-dot').removeClass("active");
+    //     $('.mobil-view-absolute').removeClass("active");
+    //     $('.map-tab__list').removeClass('mobile-margin');
+    // });
     $('.mobil-view-absolute').click(function (event) {
         event.stopPropagation(); // prevents executing the above event
     });
@@ -237,6 +238,7 @@ $(document).ready(function () {
     // var turn = 0;
     // Add Location on map
     $('#map-view path').on("click", function (e) {
+        $('.mobil-view-absolute').removeClass('active');
         var turn = parseInt($(this).attr('turn'));
         $(this).nextAll('path').attr('turn', 0);
         $(this).prevAll('path').attr('turn', 0);
@@ -268,6 +270,10 @@ $(document).ready(function () {
             }).then((result) => {
                 if (result.isConfirmed) {
                     addLocation(x, y, city);
+                    $('.mobil-view-absolute1').removeClass('active');
+                    $('.mobil-view-absolute2').removeClass('active');
+                    $('.mobil-view-absolute3').removeClass('active');
+                    $('.mobil-view-absolute4').toggleClass('active');
                 }
                 turn = 0;
                 $(this).attr('turn', turn)
@@ -276,7 +282,6 @@ $(document).ready(function () {
     });
 
     function addLocation(x, y, city) {
-        
         let map = document.createElement('div');
         let dot = document.createElement('div');
         let outerDot = document.createElement('div');
