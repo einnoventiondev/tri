@@ -440,7 +440,7 @@ a:hover {
 /* map-view */
 .map-view {
 	overflow: hidden;
-	padding: 0 0 100px 0;
+	padding: 0 0 40px 0;
 }
 
 .map-tab {
@@ -734,54 +734,12 @@ option::selection {
 
 /* end dots */
 .mobil-view-absolute {
-	position: absolute;
-	bottom: 10px;
-	right: -200%;
-	opacity: 0;
 	transition: all 0.8s ease-in-out;
 }
 
 .mobil-view-absolute.active {
 	transition: all 0.8s ease-in-out;
-	right: 20px;
-	opacity: 1;
-	bottom: 10px;
-}
 
-.mobil-view-absolute1 {
-	right: auto;
-	left: -200%;
-	bottom: 139px;
-}
-
-.mobil-view-absolute1.active {
-	right: auto;
-	bottom: 139px;
-	left: 70px;
-	z-index: 9;
-}
-
-.mobil-view-absolute2 {
-	right: auto;
-	left: -200%;
-	bottom: 13px;
-}
-
-.mobil-view-absolute2.active {
-	right: auto;
-	bottom: 30px;
-	left: 100px;
-	z-index: 9;
-}
-
-.mobil-view-absolute4 {
-	bottom: 62px;
-}
-
-.mobil-view-absolute4.active {
-	bottom: 139px;
-	right: 105px;
-	z-index: 9;
 }
 
 .mobile-view {
@@ -790,29 +748,7 @@ option::selection {
 	padding: 20px;
 	max-width: 360px;
 	border-radius: 20px;
-}
-
-.mobile-view-arrow {
-	width: 25px;
-	height: 25px;
-	transform: rotate(45deg);
-	background-color: #fff;
-	position: absolute;
-	top: 150px;
-	left: -10px;
-	z-index: 0;
-}
-
-.mobil-view-absolute1 .mobile-view-arrow {
-	left: auto;
-	right: -11px;
-	top: 230px;
-}
-
-.mobil-view-absolute2 .mobile-view-arrow {
-	left: auto;
-	right: -11px;
-	top: 339px;
+	margin: auto;
 }
 
 .mobile-view__images-wrapper {
@@ -915,7 +851,7 @@ option::selection {
 
 .map-tab__list {
 	width: 50%;
-	margin: 0 auto;
+	margin: 0 auto 50px auto;
 	transition: all 0.5s ease-in-out;
 }
 

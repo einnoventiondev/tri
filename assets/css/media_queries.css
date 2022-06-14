@@ -35,24 +35,6 @@
     .mobile-view__image{
         width: 120px;
     }
-    .mobil-view-absolute3.active {
-        right: -3px;
-        bottom: 73px;
-    }
-    .mobil-view-absolute4.active {
-        bottom: 201px;
-        right: 84px;
-    }
-    .mobil-view-absolute1.active {
-        bottom: 199px;
-        left: 43px;
-    }
-    .mobil-view-absolute2.active {
-        left: 80px;
-    }
-    .mobil-view-absolute2 .mobile-view-arrow {
-        top: 280px;
-    }
     #path31 {
         top: 14%;
         right: 75%;
@@ -151,42 +133,6 @@
     .map-tab-dot1 {
         top: 29px;
         left: 53px;
-    }
-    .mobil-view-absolute4.active {
-        bottom: 88px;
-        right: 6px;
-    }
-    .mobil-view-absolute3.active {
-        right: -35px;
-        bottom: 28px;
-    }
-    .mobile-view-arrow {
-        width: 18px;
-        height: 18px;
-        left: -7px;
-    }
-    .mobil-view-absolute3 .mobile-view-arrow {
-        top: 260px;
-    }
-    .mobile-view__image {
-        width: 110px;
-    }
-    .mobile-view {
-        max-width: 265px;
-    }
-    .mobil-view-absolute1.active {
-        bottom: 109px;
-        left: -16px;
-    }
-    .mobil-view-absolute1 .mobile-view-arrow {
-        right: -7px;
-    }
-    .mobil-view-absolute2.active {
-        left: 9px;
-    }
-    .mobil-view-absolute2 .mobile-view-arrow {
-        top: 332px;
-        right: -7px;
     }
     .conatct-form-wrapper{
         padding: 0;
@@ -394,10 +340,6 @@
     }
     .mobile-view-arrow{
         display: none;
-    }
-    .mobil-view-absolute{
-        bottom: 50px !important;
-        right: calc(50% - 132.5px) !important;
     }
     .pdd{
         padding: 0 15px !important;
@@ -635,9 +577,6 @@
     }
     .map-tab__text {
         font-size: 9px;
-    }
-    .mobil-view-absolute{
-        display: none;
     }
     #path29 {
         top: 28%;
