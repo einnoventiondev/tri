@@ -249,6 +249,26 @@
         top: 61%;
         right: 65%;
     }
+    #path52 {
+        top: 69%;
+        right: 65.5%;
+    }
+    #path24 {
+        top: 73%;
+        right: 57%;
+    }
+    #path26 {
+        top: 78%;
+        right: 44%;
+    }
+    #path23 {
+        top: 84%;
+        right: 59%;
+    }
+    #path27 {
+        top: 63%;
+        right: 20%;
+    }
 }
 @media(max-width:767px){
     .container-modified{
@@ -381,6 +401,64 @@
     }
     .pdd{
         padding: 0 15px !important;
+    }
+    #path29 {
+        top: 16%;
+        right: 55%;
+    }
+    #path31 {
+        top: 15%;
+        right: 76%;
+    }
+    #path35 {
+        top: 25%;
+        right: 82%;
+    }
+    .map-tab__text {
+        font-size: 11px;
+    }
+    #path48 {
+        top: 26%;
+        right: 64%;
+    }
+    #path27 {
+        top: 65%;
+        right: 19%;
+    }
+    #path56 {
+        top: 37%;
+        right: 56%;
+    }
+    #path36 {
+        top: 45%;
+        right: 73%;
+    }
+    #path42 {
+        top: 53%;
+        right: 45%;
+    }
+    #path37 {
+        top: 64%;
+        right: 65%;
+    }
+    #path52 {
+        top: 74%;
+        right: 65%;
+    }
+    #path24 {
+        top: 80%;
+        right: 57%;
+    }
+    #path26 {
+        top: 86%;
+        right: 44%;
+    }
+    #path23 {
+        top: 92%;
+        right: 59%;
+    }
+    #Group_17{
+        height: 424px;
     }
 }
 @media(max-width:539px){
@@ -554,6 +632,56 @@
     }
     .main-progress .progress{
         bottom: -180px;
+    }
+    .map-tab__text {
+        font-size: 9px;
+    }
+    .mobil-view-absolute{
+        display: none;
+    }
+    #path29 {
+        top: 28%;
+        right: 55%;
+    }
+    #path31 {
+        top: 25%;
+        right: 76%;
+    }
+    #path35 {
+        top: 33%;
+        right: 82%;
+    }
+    #path48 {
+        top: 35%;
+        right: 64%;
+    }
+    #path56 {
+        top: 41%;
+        right: 55%;
+    }
+    #path37 {
+        top: 58%;
+        right: 65%;
+    }
+    #path27 {
+        top: 58%;
+        right: 19%;
+    }
+    #path52 {
+        top: 66%;
+        right: 65%;
+    }
+    #path24 {
+        top: 69%;
+        right: 57%;
+    }
+    #path26 {
+        top: 72%;
+        right: 44%;
+    }
+    #path23 {
+        top: 76%;
+        right: 58%;
     }
 }
 @media(max-width:359px){
