@@ -250,6 +250,7 @@ $(document).ready(function () {
         var city = $(this).attr('city');
 
         // if(turn === 1) {
+            $('.map-dot').addClass('d-none');
             $('.'+city).removeClass('d-none');
             $('.'+city).nextAll('.map-dot').addClass('d-none');
             $('.'+city).prevAll('.map-dot').addClass('d-none');
@@ -281,7 +282,8 @@ $(document).ready(function () {
         let outerDot = document.createElement('div');
         let innerDot = document.createElement('div');
 
-        map.classList.add('map-dot','d-none', city);
+        map.classList.add('map-dot', city);
+        // map.classList.add('map-dot','d-none', city);
         dot.classList.add('dot-relative');
         outerDot.classList.add('map-tab-dot__bg');
         innerDot.classList.add('map-tab-dot__inner');
