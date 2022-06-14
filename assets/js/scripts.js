@@ -238,6 +238,7 @@ $(document).ready(function () {
     // var turn = 0;
     // Add Location on map
     $('#map-view path').on("click", function (e) {
+        $('.mobil-view-absolute').slideUp('slow');
         var turn = parseInt($(this).attr('turn'));
         $(this).nextAll('path').attr('turn', 0);
         $(this).prevAll('path').attr('turn', 0);
@@ -274,7 +275,10 @@ $(document).ready(function () {
                     // $('.mobil-view-absolute2').removeClass('active');
                     // $('.mobil-view-absolute3').removeClass('active');
                     // $('.mobil-view-absolute4').toggleClass('active');
-                    $('.mobil-view-absolute').slideToggle('slow')
+                    $('.mobil-view-absolute').slideToggle('slow');
+                    setTimeout(() => {
+                        window.location= '#location-form';
+                    }, 300);
                 }
                 turn = 0;
                 $(this).attr('turn', turn)
