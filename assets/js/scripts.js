@@ -155,9 +155,10 @@ $(document).ready(function () {
             $('.submit-btn').addClass('disabled');
         }
     });
-    $('.map-tab__img-holder').hover(function () {
-        $(this).toggleClass('active');
-    });
+    // === Map Zoom In ===
+    // $('.map-tab__img-holder').hover(function () {
+    //     $(this).toggleClass('active');
+    // });
     $('.form-box__input.message').keyup(function () {
         if (
             $(this).hasClass('field-blue') &&
