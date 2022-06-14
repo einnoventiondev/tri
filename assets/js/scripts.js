@@ -54,7 +54,6 @@ $(document).ready(function () {
     //     $('.mobil-view-absolute3').removeClass('active');
     //     $('.mobil-view-absolute4').toggleClass('active');
     // });
-
     $('#map-view .container').click(function () {
         $('.map-tab-dot').removeClass("active");
         $('.mobil-view-absolute').removeClass("active");
@@ -238,7 +237,6 @@ $(document).ready(function () {
     // var turn = 0;
     // Add Location on map
     $('#map-view path').on("click", function (e) {
-        $('.mobil-view-absolute').removeClass('active');
         var turn = parseInt($(this).attr('turn'));
         $(this).nextAll('path').attr('turn', 0);
         $(this).prevAll('path').attr('turn', 0);
@@ -252,10 +250,11 @@ $(document).ready(function () {
         var city = $(this).attr('city');
 
         // if(turn === 1) {
-            $('.map-dot').addClass('d-none');
+            // $('.map-dot').addClass('d-none');
             $('.'+city).removeClass('d-none');
-            $('.'+city).nextAll('.map-dot').addClass('d-none');
-            $('.'+city).prevAll('.map-dot').addClass('d-none');
+            // $('.'+city).nextAll('.map-dot').addClass('d-none');
+            // $('.'+city).prevAll('.map-dot').addClass('d-none');
+            $('.map-dot').not('.'+city).addClass('d-none');
         // }
         
         if($(this).attr('turn') === '2') {
@@ -282,6 +281,7 @@ $(document).ready(function () {
     });
 
     function addLocation(x, y, city) {
+        
         let map = document.createElement('div');
         let dot = document.createElement('div');
         let outerDot = document.createElement('div');
