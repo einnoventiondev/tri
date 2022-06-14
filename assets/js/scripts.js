@@ -224,41 +224,61 @@ $(document).ready(function () {
         }
     }
     move();
+
     $('.map-part').click(function () {
         $(this).prevAll().attr("class", "deactive");
         $(this).nextAll().attr("class", "deactive");
         $(this).attr("class", "pathactive");
     })
 
+    // var turn = 0;
     // Add Location on map
     $('#map-view path').on("click", function (e) {
+        var turn = parseInt($(this).attr('turn'));
+        $(this).nextAll('path').attr('turn', 0);
+        $(this).prevAll('path').attr('turn', 0);
+        turn += 1;
+        $(this).attr('turn', turn);
+        console.log(turn)
+
         let x = e.pageX;
         let y = e.pageY;
 
-        Swal.fire({
-            title: 'هل أنت متأكد أنك تريد إضافة الموقع؟',
-            icon: 'question',
-            iconHtml: '&#128512;',
-            confirmButtonText: 'نعم',
-            cancelButtonText: 'لا',
-            showCancelButton: true,
-            showCloseButton: true
-        }).then((result) => {
-            if (result.isConfirmed) {
-                addLocation(x, y);
-            }
-        })
+        var city = $(this).attr('city');
+
+        // if(turn === 1) {
+            $('.'+city).removeClass('d-none');
+            $('.'+city).nextAll('.map-dot').addClass('d-none');
+            $('.'+city).prevAll('.map-dot').addClass('d-none');
+        // }
+        
+        if($(this).attr('turn') === '2') {
+            Swal.fire({
+                title: 'هل أنت متأكد أنك تريد إضافة الموقع؟',
+                icon: 'question',
+                iconHtml: '&#128512;',
+                confirmButtonText: 'نعم',
+                cancelButtonText: 'لا',
+                showCancelButton: true,
+                showCloseButton: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    addLocation(x, y, city);
+                }
+                turn = 0;
+                $(this).attr('turn', turn)
+            })
+        }
     });
 
-    function addLocation(x, y) {
-        // let e = document.createElement('dot');
-        // $(e).addClass("map-dot");
+    function addLocation(x, y, city) {
+        
         let map = document.createElement('div');
         let dot = document.createElement('div');
         let outerDot = document.createElement('div');
         let innerDot = document.createElement('div');
 
-        map.classList.add('map-dot');
+        map.classList.add('map-dot','d-none', city);
         dot.classList.add('dot-relative');
         outerDot.classList.add('map-tab-dot__bg');
         innerDot.classList.add('map-tab-dot__inner');
@@ -275,7 +295,6 @@ $(document).ready(function () {
 
         $('#map-view .container').append(map);
         // $('.map-part').append(map);
-
         return map;
     }
 
