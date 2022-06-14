@@ -602,5 +602,31 @@
 	<!-- custom -->
 	<script src="assets/js/scripts.js"></script>
 	<script src="assets/js/ahsan.js"></script>
+	<!-- <script>
+		const svgImage = document.getElementById("Group_17");
+		const svgSize = {w:svgImage.clientWidth ,h:svgImage.clientHeight};
+		var oldScale = 1;
+		
+		svgImage.onmousewheel = function(e) {
+			e.preventDefault();
+		
+			var svgW     = svgSize.w,
+				svgH     = svgSize.h,
+				mX       = e.offsetX,
+				mY       = e.offsetY,
+				delta    = (e.wheelDelta) ? -e.wheelDelta : e.detail,
+				newScale = oldScale + (oldScale*delta/1200); //1200: intensity
+		
+			var vb      = svgImage.getAttribute('viewBox').split(" ");
+			var newW    = svgW * newScale,
+				newH    = svgH * newScale,
+				newX    = vb[0]*1 + (vb[2]*1 - newW) * (mX/svgW),
+				newY    = vb[1]*1 + (vb[3]*1 - newH) * (mY/svgH);
+		
+			viewBox = { x:Math.round(newX), y:Math.round(newY), w:newW, h:newH };
+			svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
+			oldScale = newScale;
+		}
+	</script> -->
 </body>
 </html>
