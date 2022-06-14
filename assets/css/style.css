@@ -561,12 +561,8 @@ option::selection {
 	text-align: center;
 	position: relative;
 	margin-bottom: 50px;
-	transition: all 0.3s ease-in-out;
 }
-.map-tab__img-holder.active{
-	transform: scale(1.2);
-	transition: all 0.3s ease-in-out;
-}
+
 .map-tab__img g path {
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
@@ -784,11 +780,8 @@ option::selection {
 
 .mobil-view-absolute4.active {
 	bottom: 139px;
-	right: 0;
-    left: 0;
+	right: 105px;
 	z-index: 9;
-	display: flex;
-    justify-content: center;
 }
 
 .mobile-view {
