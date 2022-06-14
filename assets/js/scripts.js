@@ -55,11 +55,11 @@ $(document).ready(function () {
     //     $('.mobil-view-absolute4').toggleClass('active');
     // });
 
-    // $('body').click(function () {
-    //     $('.map-tab-dot').removeClass("active");
-    //     $('.mobil-view-absolute').removeClass("active");
-    //     $('.map-tab__list').removeClass('mobile-margin');
-    // });
+    $('#map-view .container').click(function () {
+        $('.map-tab-dot').removeClass("active");
+        $('.mobil-view-absolute').removeClass("active");
+        $('.map-tab__list').removeClass('mobile-margin');
+    });
     $('.mobil-view-absolute').click(function (event) {
         event.stopPropagation(); // prevents executing the above event
     });

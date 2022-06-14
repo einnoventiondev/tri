@@ -784,8 +784,11 @@ option::selection {
 
 .mobil-view-absolute4.active {
 	bottom: 139px;
-	right: 105px;
+	right: 0;
+    left: 0;
 	z-index: 9;
+	display: flex;
+    justify-content: center;
 }
 
 .mobile-view {
