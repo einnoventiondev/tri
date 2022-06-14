@@ -270,10 +270,11 @@ $(document).ready(function () {
             }).then((result) => {
                 if (result.isConfirmed) {
                     addLocation(x, y, city);
-                    $('.mobil-view-absolute1').removeClass('active');
-                    $('.mobil-view-absolute2').removeClass('active');
-                    $('.mobil-view-absolute3').removeClass('active');
-                    $('.mobil-view-absolute4').toggleClass('active');
+                    // $('.mobil-view-absolute1').removeClass('active');
+                    // $('.mobil-view-absolute2').removeClass('active');
+                    // $('.mobil-view-absolute3').removeClass('active');
+                    // $('.mobil-view-absolute4').toggleClass('active');
+                    $('.mobil-view-absolute').slideToggle('slow')
                 }
                 turn = 0;
                 $(this).attr('turn', turn)
