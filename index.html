@@ -19,6 +19,7 @@
 	<!-- AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 	<!-- Main Stylesheet File -->
 	<link href="assets/css/navbar.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
@@ -330,37 +331,45 @@
 							</a>
 						</li>
 					</ul>
-					<div class="mobil-view-absolute">
+					<div class="mobil-view-absolute" id="location-form">
 						<div class="mobile-view">
 							<div class="mobile-view-arrow"></div>
-							<div class="mobile-view__images-wrapper">
-								<img src="assets/images/mobile-image1.png" class="mobile-view__image">
-								<img src="assets/images/mobile-image2.png" class="mobile-view__image">
-								<img src="assets/images/mobile-image3.png" class="mobile-view__image">
-								<img src="assets/images/mobile-image4.png" class="mobile-view__image">
+							<div class="mobile-view__images-wrapper mb-3">
+								<label class="form-label">الرجاء اختيار صور متعددة</label>
+								<!-- <div class="input-group mb-3">
+									<input type="file" class="form-control" id="inputGroupFile02" multiple>
+								  </div> -->
+								  <div class="field" align="left">
+									<input type="file" class="form-control"  id="files" name="files[]" multiple />
+									<label class="upload-label">تحميل...</label>
+								  </div>
 							</div>
 							<div class="mobile-view__content">
-								<h6 class="mobile-view__heading">أسم الفرع</h6>
-								<p class="mobile-view__para">
-									وصف الفرع، يفضل يكون وصف الفرع مختصر لتكون النافذة أصغر لتتناسب مع نسخة الهواتف الذكية ..
-								</p>
-								<div class="mobile-view-wrapper">
-									<a href="#" class="mobile-view-btn mobile-view-btn1">اتصال</a>
-									<a href="#" class="mobile-view-btn mobile-view-btn2">جوجل ماب</a>
-									<a href="#" class="mobile-view-btn mobile-view-btn3">الموقع الالكتروني</a>
-								</div>
-								<ul class="mobile-view-s-media wrapper al-center jst-center">
-									<li class="mobile-view-s-media__item">
-										<a href="#" class="mobile-view-s-media__link">
-											<i class="fa-brands fa-instagram-square mobile-view-s-media__link-icone"></i>
-										</a>
-									</li>
-									<li class="mobile-view-s-media__item">
-										<a href="#" class="mobile-view-s-media__link">
-											<i class="fa-brands fa-twitter mobile-view-s-media__link-icone"></i> 
-										</a>
-									</li>
-								</ul>
+								<form>
+									<div class="mb-3">
+									  <label for="branch_name" class="form-label">أسم الفرع</label>
+									  <input type="text" placeholder="أسم الفرع" class="form-control form-box__input" name="branch_name" id="branch_name">
+									</div>
+									<div class="mb-3">
+									  <label for="description" class="form-label">فك</label>
+									  <input type="text" class="form-control form-box__input"  placeholder="فك" name="description" id="description">
+									</div>
+									<div class="mb-3">
+										<label for="google_map" class="form-label">جوجل ماب</label>
+										<input type="text" class="form-control form-box__input"  placeholder="جوجل ماب" name="google_map" id="google_map">
+									</div>
+									<div class="mb-3">
+										<label for="website" class="form-label">الموقع الالكتروني</label>
+										<input type="text" class="form-control form-box__input"  placeholder="الموقع الالكتروني" name="website" id="website">
+									</div>
+									<div class="mb-3">
+										<label for="contact" class="form-label">اتصال</label>
+										<input type="number" pattern="\d*" class="form-control form-box__input" placeholder="اتصال" name="contact" onkeypress="if(this.value.length==13) return false;" id="contact">
+									</div>
+									<div class="d-grid gap-2">
+										<button class="btn btn-black disabled" id="location-btn" type="submit">ضم</button>
+									</div>
+								  </form>
 							</div>
 						</div>
 					</div>
@@ -489,6 +498,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script> -->
 	<script src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<!-- gsap -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
