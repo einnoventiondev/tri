@@ -745,7 +745,7 @@ option::selection {
 
 .mobile-view {
 	position: relative;
-	background-color: var(--white);
+	background-color: rgb(48 49 56 / 50%);
 	padding: 20px;
 	max-width: 360px;
 	border-radius: 20px;
@@ -1139,10 +1139,18 @@ input::-webkit-inner-spin-button {
 }
 .mobil-view-absolute .form-label {
     margin-bottom: 0.5rem;
-    color: #000;
+    color: #fff;
 }
 .mobil-view-absolute .form-control {
 	border-radius: 20px;
+}
+.mobil-view-absolute .form-box__input {
+	height: 50px;
+}
+input[type="file"] {
+	background-color: var(--mid-black);
+    border-color: var(--mid-black);
+    color: #fff;
 }
 .btn-black {
 	background-color: var(--mid-black);
@@ -1153,6 +1161,10 @@ input::-webkit-inner-spin-button {
 .btn-black:hover {
 	color: white;
 	opacity: .8;
+}
+.btn-black.active {
+	background-color: var(--chocolate);
+	border-color: var(--chocolate);
 }
 input[type="file"] {
 	display: block;
@@ -1168,14 +1180,36 @@ input[type="file"] {
 	margin: 10px 10px 0 0;
   }
   .remove {
-    display: block;
-    color: black;
+	display: block;
+    color: white;
     text-align: center;
     cursor: pointer;
+    font-size: 18px;
 }
-  .remove:hover {
+.remove:hover {
 	opacity: .8;
-  }
+}
+.upload-label {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 10px;
+    z-index: -1;
+}
+ #files {
+    opacity: 0;
+    z-index: 9999;
+    right: 0;
+    bottom: 0;
+}
+.field {
+	position: relative;
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

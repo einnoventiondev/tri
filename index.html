@@ -341,32 +341,33 @@
 								  </div> -->
 								  <div class="field" align="left">
 									<input type="file" class="form-control"  id="files" name="files[]" multiple />
+									<label class="upload-label">تحميل...</label>
 								  </div>
 							</div>
 							<div class="mobile-view__content">
 								<form>
 									<div class="mb-3">
 									  <label for="branch_name" class="form-label">أسم الفرع</label>
-									  <input type="text" placeholder="أسم الفرع" class="form-control" name="branch_name" id="branch_name">
+									  <input type="text" placeholder="أسم الفرع" class="form-control form-box__input" name="branch_name" id="branch_name">
 									</div>
 									<div class="mb-3">
 									  <label for="description" class="form-label">فك</label>
-									  <input type="text" class="form-control"  placeholder="فك" name="description" id="description">
+									  <input type="text" class="form-control form-box__input"  placeholder="فك" name="description" id="description">
 									</div>
 									<div class="mb-3">
 										<label for="google_map" class="form-label">جوجل ماب</label>
-										<input type="text" class="form-control"  placeholder="جوجل ماب" name="google_map" id="google_map">
+										<input type="text" class="form-control form-box__input"  placeholder="جوجل ماب" name="google_map" id="google_map">
 									</div>
 									<div class="mb-3">
 										<label for="website" class="form-label">الموقع الالكتروني</label>
-										<input type="text" class="form-control"  placeholder="الموقع الالكتروني" name="website" id="website">
+										<input type="text" class="form-control form-box__input"  placeholder="الموقع الالكتروني" name="website" id="website">
 									</div>
 									<div class="mb-3">
 										<label for="contact" class="form-label">اتصال</label>
-										<input type="number" pattern="\d*" class="form-control" placeholder="اتصال" name="contact" onkeypress="if(this.value.length==13) return false;" id="contact">
+										<input type="number" pattern="\d*" class="form-control form-box__input" placeholder="اتصال" name="contact" onkeypress="if(this.value.length==13) return false;" id="contact">
 									</div>
 									<div class="d-grid gap-2">
-										<button class="btn btn-black" type="submit">ضم</button>
+										<button class="btn btn-black disabled" id="location-btn" type="submit">ضم</button>
 									</div>
 								  </form>
 							</div>
